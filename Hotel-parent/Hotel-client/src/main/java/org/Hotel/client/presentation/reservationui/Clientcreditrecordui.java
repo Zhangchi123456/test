@@ -1,5 +1,7 @@
 package org.Hotel.client.presentation.reservationui;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -18,13 +20,19 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Clientcreditrecordui extends Application {
-	public void start(Stage primaryStage) throws Exception {
+	public void start(final Stage primaryStage) throws Exception {
 		BorderPane pane=new BorderPane();
 		pane.setPrefHeight(600);
 		pane.setPrefWidth(800);
 		HBox topline=new HBox();
 		pane.setTop(topline);
-
+        HBox bottomline=new HBox();
+        bottomline.setPrefSize(800, 100);
+        bottomline.setPadding(new Insets(20, 30, 30, 10));
+	    bottomline.setSpacing(500);
+		bottomline.setAlignment(Pos.BASELINE_RIGHT);
+		
+		
         Label label1=new Label("信用记录");
         label1.setFont(Font.font(40));
         topline.setAlignment(Pos.TOP_CENTER);
@@ -48,6 +56,23 @@ public class Clientcreditrecordui extends Application {
         
 		pane.setCenter(table);
 		
+		Button returnb=new Button("返回");
+		returnb.setPrefSize(80, 40);
+		returnb.setFont(Font.font(20));
+		returnb.setOnAction(new EventHandler<ActionEvent>(){
+			   public void handle(ActionEvent event){
+				   Clientmainui mainui=new Clientmainui();
+					 try {
+						mainui.start(primaryStage);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			   }
+		   });
+		
+		bottomline.getChildren().add(returnb);
+		pane.setBottom(bottomline);
 	
 		
 		Scene scnen = new Scene(pane); 
