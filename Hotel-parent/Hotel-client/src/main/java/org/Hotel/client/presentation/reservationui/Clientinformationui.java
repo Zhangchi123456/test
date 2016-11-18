@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import com.sun.prism.paint.Color;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
@@ -24,7 +26,7 @@ import javafx.scene.text.Font;
 public class Clientinformationui extends Application {
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {
+	public void start(final Stage primaryStage) throws Exception {
 		BorderPane pane=new BorderPane();
 		
 		pane.setPrefSize(800, 600);
@@ -109,8 +111,22 @@ public class Clientinformationui extends Application {
 		editb.setFont(Font.font(20));
 		Button returnb=new Button("返回");
 		returnb.setFont(Font.font(20));
-		
 		returnb.setPrefSize(80, 40);
+		
+		//监听事件
+		returnb.setOnAction(new EventHandler<ActionEvent>(){
+			   public void handle(ActionEvent event){
+				   Clientmainui mainui=new Clientmainui();
+					 try {
+						mainui.start(primaryStage);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			   }
+		   });
+		
+		
 		bottomline.getChildren().addAll(editb,returnb);
 		bottomline.setPrefSize(800, 100);
 		bottomline.setPadding(new Insets(20, 30, 30, 10));

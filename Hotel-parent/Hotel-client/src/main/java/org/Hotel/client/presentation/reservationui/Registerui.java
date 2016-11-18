@@ -4,6 +4,8 @@ import java.awt.Color;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.stage.Stage;
@@ -61,6 +63,12 @@ public class Registerui extends Application {
 		returnbutton.setPrefSize(80, 40);
 		submit.setFont(Font.font(20));
 		returnbutton.setFont(Font.font(20));
+		returnbutton.setOnAction(new EventHandler<ActionEvent>(){
+			   public void handle(ActionEvent event){
+				  
+			   }
+		   });
+		
 		
 		TextField text1=new TextField();
 		TextField text2=new TextField();

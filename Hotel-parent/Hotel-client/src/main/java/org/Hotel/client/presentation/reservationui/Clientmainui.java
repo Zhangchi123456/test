@@ -1,8 +1,11 @@
 package org.Hotel.client.presentation.reservationui;
+
 import com.sun.prism.paint.Color;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.stage.Stage;
@@ -17,9 +20,9 @@ import javafx.scene.text.Font;
 
 
 public class Clientmainui extends Application {
-
+     Stage reservatiostage;
 	@Override
-	public void start(Stage primaryStage) throws Exception {
+	public void start(final Stage reservationstage) throws Exception {
 		BorderPane pane=new BorderPane();
 		
 		pane.setPrefSize(800, 600);
@@ -56,6 +59,53 @@ public class Clientmainui extends Application {
 	    button5.setPrefSize(200, 50);
 	    
 	    
+	    //监听事件
+	   button1.setOnAction(new EventHandler<ActionEvent>(){
+		   public void handle(ActionEvent event){
+			   Clientinformationui informationui=new Clientinformationui();
+				 try {
+					informationui.start(reservationstage);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		   }
+	   });
+	   
+	   button2.setOnAction(new EventHandler<ActionEvent>(){
+		   public void handle(ActionEvent event){
+			   Clientcreditrecordui creditui=new Clientcreditrecordui();
+				 try {
+					creditui.start(reservationstage);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		   }
+	   });
+	    
+	   button3.setOnAction(new EventHandler<ActionEvent>(){
+		   public void handle(ActionEvent event){
+			  
+		   }
+	   });
+	   
+	   button4.setOnAction(new EventHandler<ActionEvent>(){
+		   public void handle(ActionEvent event){
+			  
+		   }
+	   });
+	   
+	   button5.setOnAction(new EventHandler<ActionEvent>(){
+		   public void handle(ActionEvent event){
+			  
+		   }
+	   });
+	   
+	   
+	    
+	    
+	    
 	    
 	    Label label1=new Label("欢迎您，会员");
 	    topline.setAlignment(Pos.CENTER);
@@ -74,7 +124,7 @@ public class Clientmainui extends Application {
 	    Label search=new Label("其他关键字：");
 	    Label prol=new Label("省／直辖市：");
 	    Label shil=new Label("市：");
-	    Label businessl=new Label("商圈（系统默认字体大小）：");
+	    Label businessl=new Label("商圈：");
 	    TextField seartx=new TextField();
 	    biaoyu.setFont(Font.font(25));
 	    HBox h1=new HBox();
@@ -82,12 +132,13 @@ public class Clientmainui extends Application {
 	    HBox h3=new HBox();
 	    h1.getChildren().addAll(biaoyu);
 	    h2.getChildren().addAll(prol,procb,shil,shicb,businessl,businesscb);
+	    h2.setSpacing(10);
 	    h3.getChildren().addAll(search,seartx);
 	    Button searb=new Button("开始搜索");
 	    
 	    centerpane.getChildren().addAll(h1,h2,h3,searb);
 	    centerpane.setVgap(40);
-	    centerpane.setHgap(5);
+	    centerpane.setHgap(40);
 	    centerpane.setPadding(new Insets(50, 50, 50, 50));
 	    centerpane.setPrefSize(600, 400);
 	    		
@@ -100,8 +151,8 @@ public class Clientmainui extends Application {
 	    
 	    Scene scnen = new Scene(pane);  
      
-        primaryStage.setScene(scnen);  
-	    primaryStage.show();  
+        reservationstage.setScene(scnen);  
+	    reservationstage.show();  
 		
 	}
 	public static void main(String[] args){  
