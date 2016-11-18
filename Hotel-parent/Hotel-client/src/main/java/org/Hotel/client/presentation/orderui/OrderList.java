@@ -29,10 +29,6 @@ public class OrderList extends Application {
             );
     final HBox hb = new HBox();  
    
-    public static void main(String[] args) {  
-        launch(args);  
-    }  
-   
     @Override  
     public void start(Stage stage) {  
         Scene scene = new Scene(new Group());  
