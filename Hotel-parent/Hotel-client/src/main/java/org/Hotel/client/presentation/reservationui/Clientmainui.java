@@ -1,5 +1,11 @@
 package org.Hotel.client.presentation.reservationui;
 
+
+
+
+
+import org.Hotel.client.presentation.orderui.OrderList;
+
 import com.sun.prism.paint.Color;
 
 import javafx.application.Application;
@@ -71,6 +77,17 @@ public class Clientmainui extends Application {
 				}
 		   }
 	   });
+	   button3.setOnAction(new EventHandler<ActionEvent>(){
+		   public void handle(ActionEvent event){
+			   OrderList Orderlist=new OrderList();
+				 try {
+					Orderlist.start(reservationstage);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		   }
+	   });
 	   
 	   button2.setOnAction(new EventHandler<ActionEvent>(){
 		   public void handle(ActionEvent event){
@@ -84,11 +101,7 @@ public class Clientmainui extends Application {
 		   }
 	   });
 	    
-	   button3.setOnAction(new EventHandler<ActionEvent>(){
-		   public void handle(ActionEvent event){
-			  
-		   }
-	   });
+	  
 	   
 	   button4.setOnAction(new EventHandler<ActionEvent>(){
 		   public void handle(ActionEvent event){
