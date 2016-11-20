@@ -1,6 +1,8 @@
 package org.Hotel.client.presentation.orderui;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -94,6 +96,23 @@ public class OrderEvaluateUI extends Application {
         primaryStage.setScene(scnen);  
 	    primaryStage.show();  
 		
+	    
+	    //监听事件
+	    sur.setOnAction(new EventHandler<ActionEvent>(){
+			   public void handle(ActionEvent event){				       
+					 try {
+						 if((!score.getText().isEmpty())&&(!info.getText().isEmpty()))
+								{	 
+							 System.out.println("2");}
+							 else{ 
+								 AlertBox AlertBox = new AlertBox();
+						        AlertBox.display("系统提示", "订单信息不完整");}
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			   }
+		   });
 	}
 	public static void main(String[] args){  
         Application.launch(args);  
