@@ -51,7 +51,7 @@ public class hotelInfoui extends Application {
     	 TextField Protx = new TextField();
     	 grid.add(Protx, 2, 2);
     	 
-    	 Label city = new Label("市");
+    	 Label city = new Label("市/区");
     	 grid.add(city, 1, 3);
     	 
     	 TextField citytx = new TextField();
