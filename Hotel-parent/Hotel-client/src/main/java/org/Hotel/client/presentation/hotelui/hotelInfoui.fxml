@@ -70,18 +70,18 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button fx:id="ok" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="确认" GridPane.columnIndex="1" GridPane.rowIndex="8">
+      <Button fx:id="ok" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#okButtonClicked" prefHeight="50.0" prefWidth="200.0" text="确认" GridPane.columnIndex="1" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="back" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="2" GridPane.rowIndex="8">
+      <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="2" GridPane.rowIndex="8">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
       <TextField fx:id="introductiontx" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
-      <ChoiceBox fx:id="Startx" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <ChoiceBox fx:id="Startx" onMouseClicked="#StarChoiceBoxClicked" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
       <TextField fx:id="Blocktx" GridPane.columnIndex="2" GridPane.rowIndex="4" />
       <TextField fx:id="Citytx" GridPane.columnIndex="2" GridPane.rowIndex="3" />
    </children>

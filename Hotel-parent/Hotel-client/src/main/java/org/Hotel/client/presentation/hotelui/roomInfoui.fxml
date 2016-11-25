@@ -43,11 +43,11 @@
             <TableColumn fx:id="Last" minWidth="200.0" prefWidth="75.0" text="最后一次退房时间" />
         </columns>
       </TableView>
-      <Button fx:id="ok" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="确认" GridPane.columnIndex="3" GridPane.rowIndex="8">
+      <Button fx:id="ok" mnemonicParsing="false" onMouseClicked="#okButtonClicked" prefHeight="50.0" prefWidth="200.0" text="确认" GridPane.columnIndex="3" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="back" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="4" GridPane.rowIndex="8">
+      <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="4" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font></Button>
