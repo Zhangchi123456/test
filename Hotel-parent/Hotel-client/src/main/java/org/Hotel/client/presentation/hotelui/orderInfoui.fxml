@@ -52,21 +52,21 @@
       </Label>
       <TextField fx:id="INtimetx" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField fx:id="OutTimetx" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Button fx:id="check" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="点此查看" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Button fx:id="check" mnemonicParsing="false" onMouseClicked="#checkButtonClicked" prefHeight="50.0" prefWidth="200.0" text="点此查看" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="refresh" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="刷新" GridPane.columnIndex="2" GridPane.rowIndex="5">
+      <Button fx:id="refresh" mnemonicParsing="false" onMouseClicked="#refreshButtonClicked" prefHeight="50.0" prefWidth="200.0" text="刷新" GridPane.columnIndex="2" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="back" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="3" GridPane.rowIndex="5">
+      <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="3" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <ChoiceBox fx:id="Statetx" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ChoiceBox fx:id="Statetx" onMouseClicked="#StatetxChoiceBoxClicked" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
    </children>
 </GridPane>
