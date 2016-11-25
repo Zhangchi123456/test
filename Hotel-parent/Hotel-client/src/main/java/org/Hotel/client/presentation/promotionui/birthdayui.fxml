@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController.birthdayuiController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0">
          <padding>
@@ -33,7 +33,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="27.0" prefWidth="113.0" />
+                  <TextField fx:id="birthdaydiscount" prefHeight="27.0" prefWidth="113.0" />
                   <Label text="\%">
                      <font>
                         <Font size="20.0" />
@@ -46,12 +46,12 @@
                   <Insets left="20.0" />
                </padding>
                <children>
-                  <Button mnemonicParsing="false" text="确认">
+                  <Button fx:id="confirm" mnemonicParsing="false" text="确认">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="取消">
+                  <Button fx:id="back" mnemonicParsing="false" text="返回">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -62,7 +62,7 @@
       </VBox>
       <VBox layoutY="120.0" prefHeight="397.0" prefWidth="253.0" spacing="40.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="会员生日特惠">
+            <Button id="hotelpro1" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="会员生日特惠">
                <font>
                   <Font size="20.0" />
                </font>
@@ -70,17 +70,17 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="合作企业客户特惠">
+            <Button id="hotelpro2" fx:id="button_businesspartner" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="合作企业客户特惠">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="三间以上预定特惠">
+            <Button id="hotelpro3" fx:id="button_roomnumber" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="三间以上预定特惠">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="特定住宿期间特惠">
+            <Button id="hotelpro4" fx:id="button_hoteldiscountdate" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="特定住宿期间特惠">
                <font>
                   <Font size="20.0" />
                </font>
