@@ -70,12 +70,12 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button fx:id="formOrder" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="生成订单" GridPane.columnIndex="1" GridPane.rowIndex="8">
+      <Button fx:id="formOrder" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#formOrderButtonClicked" prefHeight="50.0" prefWidth="200.0" text="生成订单" GridPane.columnIndex="1" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Back" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="2" GridPane.rowIndex="8">
+      <Button fx:id="Back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="2" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font>
@@ -89,7 +89,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Button fx:id="myOrder" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="我的订单" GridPane.rowIndex="8">
+      <Button fx:id="myOrder" mnemonicParsing="false" onMouseClicked="#myOrderButtonClicked" prefHeight="50.0" prefWidth="200.0" text="我的订单" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font>

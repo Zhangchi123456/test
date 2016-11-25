@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane hgap="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="25.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="25.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preserntationController.HotelmainuiController">
   <columnConstraints>
     <ColumnConstraints hgrow="ALWAYS" maxWidth="345.6666564941406" minWidth="10.0" prefWidth="195.33331298828125" />
     <ColumnConstraints hgrow="ALWAYS" maxWidth="226.0" minWidth="6.333343505859375" prefWidth="194.66668701171875" />
@@ -36,22 +36,22 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Button fx:id="RoomInfo" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="客房列表" GridPane.rowIndex="1">
+      <Button fx:id="RoomInfo" mnemonicParsing="false" onMouseClicked="#RoomInfoButtonClicked" prefHeight="50.0" prefWidth="200.0" text="客房列表" GridPane.rowIndex="1">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Order" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="订单列表" GridPane.rowIndex="2">
+      <Button fx:id="Order" mnemonicParsing="false" onMouseClicked="#OrderButtonClicked" prefHeight="50.0" prefWidth="200.0" text="订单列表" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="Update" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="入住信息更新" GridPane.rowIndex="3">
+      <Button fx:id="Update" mnemonicParsing="false" onMouseClicked="#UpdateButtonClicked" prefHeight="50.0" prefWidth="200.0" text="入住信息更新" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="HotelInfo" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="酒店基本信息维护" GridPane.rowIndex="4">
+      <Button fx:id="HotelInfo" mnemonicParsing="false" onMouseClicked="#HotelInfoButtonClicked" prefHeight="50.0" prefWidth="200.0" text="酒店基本信息维护" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font>
