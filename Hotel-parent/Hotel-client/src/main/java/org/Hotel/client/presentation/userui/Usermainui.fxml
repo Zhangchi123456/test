@@ -60,7 +60,7 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="50.0" prefWidth="200.0">
+            <HBox onMouseClicked="#ProvinceChoiceClicked" prefHeight="50.0" prefWidth="200.0">
                <children>
                   <Label text="开始搜索您心仪的酒店:">
                      <font>
@@ -85,19 +85,19 @@
                   <Label text="酒店名称:" />
                   <TextField maxWidth="80.0" />
                   <Label text="房间类型:" />
-                  <ChoiceBox fx:id="RoomtypeChoicebox" prefWidth="60.0" />
+                  <ChoiceBox fx:id="RoomtypeChoicebox" onMouseClicked="#RoomtypeChoiceClicked" prefWidth="60.0" />
                   <Label text="房间数量:" />
-                  <ChoiceBox fx:id="RoomnumChoicebox" prefWidth="60.0" />
+                  <ChoiceBox fx:id="RoomnumChoicebox" onMouseClicked="#RoomnumChoiceClicked" prefWidth="60.0" />
                </children>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>
                   <Label text="酒店星级:" />
-                  <ChoiceBox fx:id="HotelstarChoicebox" prefWidth="80.0" />
+                  <ChoiceBox fx:id="HotelstarChoicebox" onMouseClicked="#HotelstarChoiceClicked" prefWidth="80.0" />
                   <Label text="酒店评分:" />
-                  <ChoiceBox fx:id="HotelgradeChoicebox" prefWidth="60.0" />
+                  <ChoiceBox fx:id="HotelgradeChoicebox" onMouseClicked="#HotelgradeChoiceClicked" prefWidth="60.0" />
                   <Label text=" 价格:      " />
-                  <ChoiceBox fx:id="HotelpriceChoicebox" prefWidth="60.0" />
+                  <ChoiceBox fx:id="HotelpriceChoicebox" onMouseClicked="#HotelpriceChoiceClicked" prefWidth="60.0" />
                </children>
                <padding>
                   <Insets left="132.0" />
@@ -106,9 +106,9 @@
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Label text="入住日期:  " />
-                  <DatePicker prefWidth="120.0" />
+                  <DatePicker fx:id="CheckinDatepicker" prefWidth="120.0" />
                   <Label text="       离开日期:  " />
-                  <DatePicker prefWidth="120.0" />
+                  <DatePicker fx:id="CheckoutDatepicker" prefWidth="120.0" />
                </children>
                <padding>
                   <Insets left="130.0" />

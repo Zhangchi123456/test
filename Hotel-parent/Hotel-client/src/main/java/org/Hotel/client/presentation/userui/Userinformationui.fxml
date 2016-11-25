@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserinformationuiController">
    <top>
       <HBox alignment="CENTER" prefHeight="120.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -35,7 +35,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label text="Label" />
+                  <Label fx:id="MembercharacterLabel" text="Label" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="200.0">
@@ -45,7 +45,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label text="Label" />
+                  <Label fx:id="MemberlevelLabel" text="Label" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="215.0">
@@ -55,7 +55,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField />
+                  <TextField fx:id="MembernameText" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="194.0">
@@ -65,7 +65,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField />
+                  <TextField fx:id="PhonenumberText" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="235.0">
@@ -75,7 +75,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <DatePicker />
+                  <DatePicker fx:id="BithidayDatepicker" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="218.0">
@@ -85,7 +85,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label text="Label" />
+                  <Label fx:id="MembercreditvalueLabel" text="Label" />
                </children>
             </HBox>
          </children>
@@ -97,11 +97,11 @@
    <bottom>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="450.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="保存">
+            <Button fx:id="SaveButton" mnemonicParsing="false" onMouseClicked="#SaveButttonClicked" text="保存">
                <font>
                   <Font size="20.0" />
                </font></Button>
-            <Button mnemonicParsing="false" text="返回">
+            <Button fx:id="ReturnButton" mnemonicParsing="false" onMouseClicked="#ReturnButtonClicked" text="返回">
                <font>
                   <Font size="20.0" />
                </font>

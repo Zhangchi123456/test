@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" >
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <padding>
@@ -33,12 +32,12 @@
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
                <children>
-                  <CheckBox mnemonicParsing="false" text="个人会员">
+                  <CheckBox fx:id="MemberCheckbox" mnemonicParsing="false" text="个人会员">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox mnemonicParsing="false" text="企业会员">
+                  <CheckBox fx:id="CompanyCheckbox" mnemonicParsing="false" text="企业会员">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -52,7 +51,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField />
+                  <TextField fx:id="NameText" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="260.0">
@@ -62,7 +61,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <PasswordField />
+                  <PasswordField fx:id="PasswordText" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="220.0">
@@ -72,7 +71,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <PasswordField />
+                  <PasswordField fx:id="PasswordconfirmText" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="92.0">
@@ -82,7 +81,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField />
+                  <TextField fx:id="PhonenumberText" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="172.0">
@@ -92,7 +91,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <DatePicker />
+                  <DatePicker fx:id="BirthdayDatepicker" />
                </children>
             </HBox>
          </children>
@@ -104,12 +103,12 @@
    <bottom>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="400.0" BorderPane.alignment="BOTTOM_CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="提交">
+            <Button fx:id="Commitbutton" mnemonicParsing="false" onMouseClicked="#CommitbuttonClicked" prefHeight="50.0" prefWidth="100.0" text="提交">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="返回">
+            <Button fx:id="Returnbutton" mnemonicParsing="false" onMouseClicked="#ReturnbuttonClicked" prefHeight="50.0" prefWidth="100.0" text="返回">
                <font>
                   <Font size="20.0" />
                </font>

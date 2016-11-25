@@ -30,24 +30,24 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label text="客房列表" GridPane.columnSpan="3" GridPane.rowSpan="2">
+      <Label fx:id="roomList" text="客房列表" GridPane.columnSpan="3" GridPane.rowSpan="2">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <TableView prefHeight="500.0" prefWidth="800.0" GridPane.columnSpan="6" GridPane.rowIndex="2" GridPane.rowSpan="6">
+      <TableView fx:id="table" prefHeight="500.0" prefWidth="800.0" GridPane.columnSpan="6" GridPane.rowIndex="2" GridPane.rowSpan="6">
         <columns>
-          <TableColumn minWidth="200.0" prefWidth="75.0" text="房间号" />
-          <TableColumn minWidth="200.0" prefWidth="75.0" text="客房信息" />
-            <TableColumn minWidth="200.0" prefWidth="75.0" text="房间状态" />
-            <TableColumn minWidth="200.0" prefWidth="75.0" text="最后一次退房时间" />
+          <TableColumn fx:id="roomNum" minWidth="200.0" prefWidth="75.0" text="房间号" />
+          <TableColumn fx:id="RoomInfo" minWidth="200.0" prefWidth="75.0" text="客房信息" />
+            <TableColumn fx:id="State" minWidth="200.0" prefWidth="75.0" text="房间状态" />
+            <TableColumn fx:id="Last" minWidth="200.0" prefWidth="75.0" text="最后一次退房时间" />
         </columns>
       </TableView>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="确认" GridPane.columnIndex="3" GridPane.rowIndex="8">
+      <Button fx:id="ok" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="确认" GridPane.columnIndex="3" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="4" GridPane.rowIndex="8">
+      <Button fx:id="back" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="4" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font></Button>
