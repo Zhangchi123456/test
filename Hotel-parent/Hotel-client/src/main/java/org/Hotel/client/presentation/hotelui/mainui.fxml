@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane hgap="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="25.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+<GridPane hgap="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="25.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="ALWAYS" maxWidth="345.6666564941406" minWidth="10.0" prefWidth="195.33331298828125" />
     <ColumnConstraints hgrow="ALWAYS" maxWidth="226.0" minWidth="6.333343505859375" prefWidth="194.66668701171875" />
@@ -23,7 +23,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label alignment="TOP_CENTER" text="快速管理酒店" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2">
+      <Label fx:id="title" alignment="TOP_CENTER" text="快速管理酒店" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2">
          <font>
             <Font size="40.0" />
          </font>
@@ -31,27 +31,27 @@
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </opaqueInsets>
       </Label>
-      <Label text="欢迎来到酒店管理系统" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+      <Label fx:id="welcome" text="欢迎来到酒店管理系统" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="客房列表" GridPane.rowIndex="1">
+      <Button fx:id="RoomInfo" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="客房列表" GridPane.rowIndex="1">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="订单列表" GridPane.rowIndex="2">
+      <Button fx:id="Order" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="订单列表" GridPane.rowIndex="2">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="入住信息更新" GridPane.rowIndex="3">
+      <Button fx:id="Update" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="入住信息更新" GridPane.rowIndex="3">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="酒店基本信息维护" GridPane.rowIndex="4">
+      <Button fx:id="HotelInfo" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="酒店基本信息维护" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font>
