@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrderInputCOntroller">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController.OrderInputController">
    <top>
       <Label prefHeight="150.0" prefWidth="300.0" text="酒店管理系统订单预定" BorderPane.alignment="CENTER">
          <font>
@@ -28,7 +28,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <TextField id="UserName" />
+                  <TextField id="UserName" fx:id="UserName" />
                </children>
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0">
@@ -38,7 +38,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <TextField id="UserNum" />
+                  <TextField id="UserNum" fx:id="UserNum" />
                </children>
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0">
@@ -48,7 +48,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <TextField id="Telephone" />
+                  <TextField id="Telephone" fx:id="TelePhone" />
                </children>
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0">
@@ -58,7 +58,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <ChoiceBox id="RoomType" onContextMenuRequested="#dg" prefWidth="150.0" />
+                  <ChoiceBox id="RoomType" fx:id="RoomType" onContextMenuRequested="#dg" prefWidth="150.0" />
                </children>
             </HBox>
             <HBox prefHeight="55.0" prefWidth="800.0">
@@ -68,7 +68,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <ChoiceBox id="RoomType" onContextMenuRequested="#dg" prefWidth="150.0" />
+                  <ChoiceBox id="RoomType" fx:id="Child" onContextMenuRequested="#dg" prefWidth="150.0" />
                </children>
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0">
@@ -78,20 +78,20 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <TextField id="TimeBegin" />
+                  <TextField id="TimeBegin" fx:id="TimeBegin" />
                   <Label prefHeight="28.0" prefWidth="64.0" text="   ——" />
-                  <TextField id="TimeEnd" />
+                  <TextField id="TimeEnd" fx:id="TimeEnd" />
                </children>
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0" spacing="10.0">
                <children>
                   <Label prefHeight="67.0" prefWidth="463.0" />
-                  <Button id="Return" mnemonicParsing="false" prefHeight="45.0" prefWidth="94.0" text="返 回">
+                  <Button id="Return" fx:id="Return" mnemonicParsing="false" prefHeight="45.0" prefWidth="94.0" text="返 回">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button id="Sure" mnemonicParsing="false" prefHeight="45.0" prefWidth="93.0" text="确 定">
+                  <Button id="Sure" fx:id="Sure" mnemonicParsing="false" prefHeight="45.0" prefWidth="93.0" text="确 定">
                      <font>
                         <Font size="24.0" />
                      </font>

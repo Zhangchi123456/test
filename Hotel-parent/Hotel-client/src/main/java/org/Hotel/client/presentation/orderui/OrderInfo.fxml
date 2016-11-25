@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController.OrderInfoController">
    <top>
       <Label prefHeight="150.0" prefWidth="300.0" text="          订单信息" BorderPane.alignment="CENTER">
          <font>
@@ -19,14 +19,28 @@
    <bottom>
       <VBox prefHeight="458.0" prefWidth="715.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="60.0" prefWidth="800.0">
+            <HBox prefHeight="69.0" prefWidth="800.0">
                <children>
                   <Label text="            酒店名 ：">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="37.0" prefWidth="143.0" text="如家">
+                  <Label id="Hotel" prefHeight="25.0" prefWidth="120.0" text="如家">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="800.0">
+               <children>
+                  <Label text="            有无儿童： ：">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label id="Child" prefHeight="29.0" prefWidth="133.0" text="有">
                      <font>
                         <Font size="23.0" />
                      </font>
@@ -40,7 +54,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="37.0" prefWidth="143.0" text="2">
+                  <Label id="UserNum" prefHeight="37.0" prefWidth="143.0" text="2">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -54,7 +68,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="37.0" prefWidth="143.0" text="15050754319">
+                  <Label id="Telephone" prefHeight="37.0" prefWidth="143.0" text="15050754319">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -68,7 +82,7 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="37.0" prefWidth="143.0" text="大">
+                  <Label id="RoomType" prefHeight="37.0" prefWidth="143.0" text="大">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -82,13 +96,13 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="37.0" prefWidth="143.0">
+                  <Label id="TimeBegin" prefHeight="37.0" prefWidth="143.0">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
                   <Label prefHeight="28.0" prefWidth="64.0" text="   ——" />
-                  <Label prefHeight="37.0" prefWidth="143.0">
+                  <Label id="TimeEnd" prefHeight="37.0" prefWidth="143.0">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -98,7 +112,7 @@
             <HBox prefHeight="60.0" prefWidth="800.0" spacing="10.0">
                <children>
                   <Label prefHeight="67.0" prefWidth="463.0" />
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="93.0" text="确 定">
+                  <Button id="Sure" mnemonicParsing="false" prefHeight="45.0" prefWidth="93.0" text="确 定">
                      <font>
                         <Font size="24.0" />
                      </font>
