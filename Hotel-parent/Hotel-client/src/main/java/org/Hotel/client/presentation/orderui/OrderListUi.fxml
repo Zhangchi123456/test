@@ -51,6 +51,6 @@
       </VBox>
    </bottom>
    <left>
-      <ChoiceBox id="OrderStation" prefHeight="48.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+      <ChoiceBox id="OrderStation" onMouseClicked="#OrderTypeChoiceClicked" prefHeight="48.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
    </left>
 </fx:root>
