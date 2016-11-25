@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preserntationController.UsermainuiController">
    <top>
       <HBox alignment="CENTER" prefHeight="120.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -72,11 +72,11 @@
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="15.0">
                <children>
                   <Label text="省:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="ProvinceChoicebox" prefWidth="80.0" />
                   <Label text="市:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="CityChoicebox" prefWidth="80.0" />
                   <Label text="县/商区:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="BusinessdistrictChoicebox" prefWidth="80.0" />
                </children>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
@@ -85,19 +85,19 @@
                   <Label text="酒店名称:" />
                   <TextField maxWidth="80.0" />
                   <Label text="房间类型:" />
-                  <ChoiceBox prefWidth="60.0" />
+                  <ChoiceBox fx:id="RoomtypeChoicebox" prefWidth="60.0" />
                   <Label text="房间数量:" />
-                  <ChoiceBox prefWidth="60.0" />
+                  <ChoiceBox fx:id="RoomnumChoicebox" prefWidth="60.0" />
                </children>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>
                   <Label text="酒店星级:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="HotelstarChoicebox" prefWidth="80.0" />
                   <Label text="酒店评分:" />
-                  <ChoiceBox prefWidth="60.0" />
+                  <ChoiceBox fx:id="HotelgradeChoicebox" prefWidth="60.0" />
                   <Label text=" 价格:      " />
-                  <ChoiceBox prefWidth="60.0" />
+                  <ChoiceBox fx:id="HotelpriceChoicebox" prefWidth="60.0" />
                </children>
                <padding>
                   <Insets left="132.0" />
