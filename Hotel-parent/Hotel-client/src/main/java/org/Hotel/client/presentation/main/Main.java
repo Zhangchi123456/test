@@ -15,7 +15,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 
-public class Mainexample extends Application{
+public class Main extends Application{
 	private Stage mainStage;
 	
 	@Override
@@ -28,7 +28,7 @@ public class Mainexample extends Application{
 	//stage的初始化
     public void init(Stage stage){
     	this.mainStage=stage;
-    	goto_Loginui();
+    	goto_Usermainui();
     }
     
     
@@ -51,9 +51,9 @@ public class Mainexample extends Application{
     //切换窗口的一个实现方法，用fxmlloader加载fxml文件路径再进行跳转
     private Initializable replaceSceneContent(String fxml) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
-		InputStream in = Mainexample.class.getResourceAsStream(fxml);
+		InputStream in = Main.class.getResourceAsStream(fxml);
 		loader.setBuilderFactory(new JavaFXBuilderFactory());
-		loader.setLocation(Mainexample.class.getResource(fxml));
+		loader.setLocation(Main.class.getResource(fxml));
 		
 		BorderPane page;
 		try {
