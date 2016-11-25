@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" >
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UsercreditrecorduiController">
    <top>
       <HBox alignment="CENTER" prefHeight="120.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -22,7 +22,7 @@
       </HBox>
    </top>
    <center>
-      <TableView fx:id="table" prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="Table" prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn prefWidth="160.0" text="时间" />
           <TableColumn prefWidth="160.0" text="订单号" />
@@ -35,7 +35,7 @@
    <bottom>
       <HBox prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER_RIGHT">
          <children>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="返回">
+            <Button fx:id="ReturnButton" mnemonicParsing="false" onMouseClicked="#ReturnButtonClicked" prefHeight="50.0" prefWidth="100.0" text="返回">
                <font>
                   <Font size="20.0" />
                </font>
