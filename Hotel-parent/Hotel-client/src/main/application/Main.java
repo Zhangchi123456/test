@@ -1,16 +1,20 @@
-package org.Hotel.client.presentation.main;
 
+import java.io.IOException;
 import java.io.InputStream;
+
 
 import java.util.ResourceBundle;
 
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -25,12 +29,22 @@ import javafx.stage.Stage;
 
 public class Main extends Application{
 	private Stage mainStage;
+	InputStream in;
 	public static void main(String[] args){
 		launch(args);
 	}
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		GridPane grid=new GridPane();
+		
+		init(primaryStage);
+		primaryStage.show();
+		
+	}
+	
+	//stage的初始化
+    public void init(Stage stage){
+    	this.mainStage=stage;
+       GridPane grid=new GridPane();
 		
 		grid.setPrefSize(600, 400);
 		grid.setVgap(10);
@@ -60,27 +74,36 @@ public class Main extends Application{
 		grid.add(hbOfLogSign,1, 3);
 		
 		login.setOnAction(e->{
-			System.out.print("zero");
+			
+			
 			
 		});
+		
 			
+		
 		
 		
 		
 		Scene scene=new Scene(grid);
 		
-		primaryStage.setScene(scene);
+		mainStage.setScene(scene);
 		
-		primaryStage.setTitle("用户登录");
-		
-		primaryStage.show();
-		
-	}
-	
-	//stage的初始化
-    public void init(Stage stage){
-    	this.mainStage=stage;
-    	goto_Usermainui();
+		mainStage.setTitle("用户登录");
+		signin.setOnAction(new EventHandler<ActionEvent>(){
+			   public void handle(ActionEvent event){
+				 try {
+					 mainStage.close();
+					 Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("Usermainui.fxml"));
+					Scene scene=new Scene(root);
+					mainStage.setScene(scene);
+					mainStage.show();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			   }
+		   });
+    	
     }
     
     
@@ -103,7 +126,7 @@ public class Main extends Application{
     //切换窗口的一个实现方法，用fxmlloader加载fxml文件路径再进行跳转
     private Initializable replaceSceneContent(String fxml) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
-		InputStream in = Main.class.getResourceAsStream(fxml);
+		 in = Main.class.getResourceAsStream(fxml);
 		loader.setBuilderFactory(new JavaFXBuilderFactory());
 		loader.setLocation(Main.class.getResource(fxml));
 		
@@ -111,7 +134,7 @@ public class Main extends Application{
 		try {
 			page = (BorderPane) loader.load(in);
 		}finally {
-			in.close();
+			//in.close();
 		} 
 		mainStage.centerOnScreen();
 		Scene scene = new Scene(page);
