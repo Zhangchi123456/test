@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0">
          <padding>
@@ -27,7 +27,7 @@
       </HBox>
       <VBox layoutY="120.0" prefHeight="400.0" prefWidth="300.0" spacing="30.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="特定期间折扣">
+            <Button fx:id="button_webdiscountdate" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="特定期间折扣">
                <font>
                   <Font size="20.0" />
                </font>
@@ -40,7 +40,7 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
+            <Button fx:id="button_businesscirclr" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
                <font>
                   <Font size="20.0" />
                </font>
@@ -59,7 +59,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ChoiceBox prefHeight="23.0" prefWidth="100.0" />
+                  <ChoiceBox fx:id="level" prefHeight="23.0" prefWidth="100.0" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
@@ -69,7 +69,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="23.0" prefWidth="100.0" />
+                  <TextField fx:id="credit" prefHeight="23.0" prefWidth="100.0" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
@@ -79,7 +79,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="23.0" prefWidth="50.0" />
+                  <TextField fx:id="discount" prefHeight="23.0" prefWidth="50.0" />
                   <Label text="\%">
                      <font>
                         <Font size="20.0" />
@@ -89,12 +89,12 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="60.0">
                <children>
-                  <Button mnemonicParsing="false" text="确认">
+                  <Button fx:id="confirm" mnemonicParsing="false" text="确认">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="返回">
+                  <Button fx:id="back" mnemonicParsing="false" text="返回">
                      <font>
                         <Font size="20.0" />
                      </font>

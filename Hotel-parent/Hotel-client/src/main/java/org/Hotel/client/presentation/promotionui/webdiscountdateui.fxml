@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController.webdiscountdateuiController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0">
          <padding>
@@ -36,12 +36,12 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="会员等级折扣">
+            <Button fx:id="button_memberlevel" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="会员等级折扣">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
+            <Button fx:id="button_businesscircle" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
                <font>
                   <Font size="20.0" />
                </font>
@@ -53,14 +53,14 @@
       </VBox>
       <VBox layoutX="300.0" layoutY="120.0" prefHeight="394.0" prefWidth="270.0">
          <children>
-            <TableView prefHeight="360.0" prefWidth="270.0">
+            <TableView fx:id="webdiscountdateTable" prefHeight="360.0" prefWidth="270.0">
               <columns>
-                <TableColumn prefWidth="90.0" text="开始日期" />
-                <TableColumn prefWidth="90.0" text="结束日期" />
-                  <TableColumn prefWidth="90.0" text="折扣(%)" />
+                <TableColumn fx:id="webdiscountdateTable_start" prefWidth="90.0" text="开始日期" />
+                <TableColumn fx:id="webdiscountdateTable_end" prefWidth="90.0" text="结束日期" />
+                  <TableColumn fx:id="webdiscountdateTable_discount" prefWidth="90.0" text="折扣(%)" />
               </columns>
             </TableView>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="270.0" text="删除">
+            <Button fx:id="delete" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="270.0" text="删除">
                <font>
                   <Font size="16.0" />
                </font>
@@ -81,13 +81,13 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="30.0" prefWidth="30.0" />
+                  <TextField fx:id="startMonth" prefHeight="30.0" prefWidth="30.0" />
                   <Label text="月">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="31.0" prefWidth="30.0" />
+                  <TextField fx:id="startDate" prefHeight="31.0" prefWidth="30.0" />
                   <Label text="日">
                      <font>
                         <Font size="20.0" />
@@ -102,14 +102,29 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="30.0" prefWidth="30.0" />
+                  <TextField fx:id="endMonth" prefHeight="30.0" prefWidth="30.0" />
                   <Label text="月">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="30.0" prefWidth="30.0" />
+                  <TextField fx:id="endDate" prefHeight="30.0" prefWidth="30.0" />
                   <Label text="日">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label text="对应折扣">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="newDiscount" prefHeight="28.0" prefWidth="91.0" />
+                  <Label text="\%">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -118,12 +133,12 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="80.0">
                <children>
-                  <Button mnemonicParsing="false" text="确定">
+                  <Button fx:id="confirm" mnemonicParsing="false" text="确定">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="返回">
+                  <Button fx:id="back" mnemonicParsing="false" text="返回">
                      <font>
                         <Font size="16.0" />
                      </font>
