@@ -23,7 +23,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label fx:id="title" alignment="TOP_CENTER" text="快速管理酒店" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2">
+      <Label fx:id="title" alignment="TOP_CENTER" text="快速管理酒店" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2">
          <font>
             <Font size="40.0" />
          </font>
@@ -51,7 +51,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="HotelInfo" mnemonicParsing="false" onMouseClicked="#HotelInfoButtonClicked" prefHeight="50.0" prefWidth="200.0" text="酒店基本信息维护" GridPane.rowIndex="4">
+      <Button fx:id="HotelInfo" mnemonicParsing="false" onMouseClicked="#HotelInfoButtonClicked" prefHeight="50.0" prefWidth="200.0" text="酒店信息维护" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font>
@@ -61,6 +61,6 @@
       <Insets />
    </opaqueInsets>
    <padding>
-      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+      <Insets bottom="40.0" left="80.0" right="1.0" top="1.0" />
    </padding>
 </GridPane>

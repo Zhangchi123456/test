@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -29,6 +30,9 @@
          <font>
             <Font size="50.0" />
          </font>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="100.0" top="30.0" />
+         </GridPane.margin>
       </Label>
       <Label fx:id="roomNum" text="客房号：" GridPane.rowIndex="1">
          <font>
@@ -53,16 +57,25 @@
       <TextField fx:id="roomNumtx" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField fx:id="INTimetx" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField fx:id="orderNumtx" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button fx:id="ok" mnemonicParsing="false" onMouseClicked="#okButtonClicked" prefHeight="50.0" prefWidth="200.0" text="确定" GridPane.columnIndex="1" GridPane.rowIndex="6">
+      <Button fx:id="ok" mnemonicParsing="false" onMouseClicked="#okButtonClicked" prefHeight="50.0" prefWidth="100.0" text="确定" GridPane.rowIndex="6">
          <font>
             <Font size="20.0" />
          </font>
+         <GridPane.margin>
+            <Insets bottom="30.0" />
+         </GridPane.margin>
       </Button>
-      <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="2" GridPane.rowIndex="6">
+      <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="100.0" text="返回" GridPane.columnIndex="2" GridPane.rowIndex="6">
          <font>
             <Font size="20.0" />
          </font>
+         <GridPane.margin>
+            <Insets bottom="30.0" right="50.0" />
+         </GridPane.margin>
       </Button>
       <DatePicker fx:id="OutTimetx" GridPane.columnIndex="1" GridPane.rowIndex="3" />
    </children>
+   <padding>
+      <Insets left="150.0" />
+   </padding>
 </GridPane>

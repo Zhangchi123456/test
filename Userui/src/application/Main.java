@@ -3,6 +3,7 @@ package application;
 import java.io.InputStream;
 
 
+
 import Helper.UiswitchHelper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -155,8 +156,149 @@ public class Main extends Application {
 			}
 	    }
 	    
+	    //以下是网站管理人员进行界面跳转的方法
 	    
+	    //跳转至网站管理人员主界面 num2.0
+	    public void goto_UserWebManagementui(){
+	    	try {
+				replaceSceneContent("/userui/UserWebManagement.fxml");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
 	    
+	    //从管理人员主界面跳转至酒店工作人员管理界面 num2.0.1
+	    public  void goto_UserWebManagementHotelui(){
+	    	try {
+				replaceSceneContent("/userui/UserWebManagementHotel.fxml");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+	    //从管理人员主界面跳转到网站营销人员管理界面  num2.0.2
 	    
-	 
+	     public void goto_UserWebManagermentWebui(){
+	    	 try {
+					replaceSceneContent("/userui/UserWebManagementWeb.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //网站营销人员管理界面跳转到添加网站营销人员界面num2.0.2.1
+	     public void goto_AddWebStuffui(){
+	    	 try {
+					replaceSceneContent("/userui/AddWebStuff.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	    //从管理人员主界面跳转到添加酒店页面   num2.0.3
+	     public void goto_UserWebAddHotelui(){
+	    	 try {
+					replaceSceneContent("/userui/UserWebAddHotel.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从管理人员主界面跳转到会员管理界面 num2.0.4(相当于跳回管理人员主界面）
+	     
+	     //从添加酒店页面跳转到添加房间页面 num2.0.3.1
+	     public void goto_UserWebAddRoomui(){
+	    	 try {
+					replaceSceneContent("/userui/UserWebAddRoom.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	      
+	     //从添加酒店页面跳转到添加简介页面 num2.0.3.2
+	     public void goto_UserWebAddDescriptionui(){
+	    	 try {
+					replaceSceneContent("/userui/UserWebAddDescription.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	    //从添加酒店页面跳转到添加酒店人员页面 num2.0.3.3
+	     public void goto_AddHotelStuffui(){
+	    	 try {
+					replaceSceneContent("/userui/AddHotelStuff.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     
+	     //以下是酒店工作人员登录之后的界面跳转
+	     
+	     //跳转到酒店工作人员主界面  num3.0
+	     public void goto_HotelMainui(){
+	    	 try {
+					replaceSceneContent("/hotelui/HotelMainui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从酒店工作人员主界面跳转到客房列表界面 num3.0.1 
+	     public void goto_roomInfoui(){
+	    	 try {
+					replaceSceneContent("/hotelui/roomInfoui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从酒店工作人员主界面跳转到订单列表界面 num3.0.2 
+	     public void goto_orderui(){
+	    	 try {
+					replaceSceneContent("/hotelui/orderui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     
+	    //从订单列表界面跳转到订单详细信息界面 num3.0.2.1
+	     public void goto_ordeinfoui(){
+	    	 try {
+					replaceSceneContent("/hotelui/orderinfoui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     //从酒店工作人员主界面跳转到入住信息更新界面 num3.0.3
+	     public void goto_updateui(){
+	    	 try {
+					replaceSceneContent("/hotelui/updateui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从酒店工作人员主界面跳转到酒店信息维护界面 num3.0.4
+	     public void goto_hotelInfoui(){
+	    	 try {
+					replaceSceneContent("/hotelui/hotelInfoui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
 }
