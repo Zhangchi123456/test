@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController.OrderInfoController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.OrderInfoController">
    <top>
       <Label prefHeight="150.0" prefWidth="300.0" text="          订单信息" BorderPane.alignment="CENTER">
          <font>
@@ -112,7 +112,7 @@
             <HBox prefHeight="60.0" prefWidth="800.0" spacing="10.0">
                <children>
                   <Label prefHeight="67.0" prefWidth="463.0" />
-                  <Button id="Sure" mnemonicParsing="false" prefHeight="45.0" prefWidth="93.0" text="确 定">
+                  <Button id="Sure" mnemonicParsing="false" onAction="#SureClicked" prefHeight="45.0" prefWidth="93.0" text="确 定">
                      <font>
                         <Font size="24.0" />
                      </font>

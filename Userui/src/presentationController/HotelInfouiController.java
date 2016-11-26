@@ -3,6 +3,7 @@ package presentationController;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -34,12 +35,12 @@ public class HotelInfouiController implements Initializable{
 		
 	}
 	@FXML
-	private void backButtonClicked(ActionEvent event){
+	private void ReturnClicked(ActionEvent event){
 //		Parent root = FXMLLoader.load(getClass().getResource("mainui.fxml"));
 		
 	}
 	@FXML
-	private void okButtonClicked(ActionEvent event){
+	private void SureClicked(ActionEvent event){
 		
 	}
 	@Override

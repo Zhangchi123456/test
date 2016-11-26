@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
@@ -36,9 +37,9 @@ public class OrderInfoController implements Initializable {
 	
 	
 	  @FXML
-	  private void  ret(ActionEvent event){
-		  
-		  close(null);
+	  private void  SureClicked(ActionEvent event){
+		  UiswitchHelper.getApplication().goto_Usermainui();
+		
 	  }
 	  //关闭
 	  @FXML

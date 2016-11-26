@@ -6,8 +6,7 @@ import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
-
+import Helper.UiswitchHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
@@ -28,15 +27,15 @@ public class OrderEvaluateController  implements Initializable{
 	    private Button Return;
 	  //返回监听
 	  @FXML
-	  private void  ret(ActionEvent event){
-		  
-		  close(null);
+	  private void  ReturnClicked(ActionEvent event){
+		  UiswitchHelper.getApplication().goto_Usermainui();
+		 
 	  }
 	  //关闭
 	  @FXML
-		public void close(ActionEvent event){
+		public void SureClicked(ActionEvent event){
 			
-			
+		  UiswitchHelper.getApplication().goto_Usermainui();
 		}
 	  //确定监听
 	  @FXML

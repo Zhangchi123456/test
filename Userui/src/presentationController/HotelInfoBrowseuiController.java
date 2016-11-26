@@ -3,6 +3,7 @@ package presentationController;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -28,17 +29,18 @@ public class HotelInfoBrowseuiController implements Initializable{
 	private Label hotelInfo,hotelName,Address,Province,City,Block,Star,introduction,welcome;
      
 	@FXML
-	private void backButtonClicked(ActionEvent event){
-		
+	private void ReturnClilcked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_HotelListui();
 	}
 	@FXML
-	private void myOrderButtonClicked(ActionEvent event){
-		
+	private void MyOrderClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_OrderListUi();
 	}
 	@FXML
-	private void formOrderButtonClicked(ActionEvent event){
-		
+	private void InputOrderClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_OrderInputUi();
 	}
+	 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
