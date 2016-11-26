@@ -145,6 +145,18 @@ public class Main extends Application {
 			}
 	    }
 	    
+	    //用户想对已执行订单进行评价时跳转到评价界面
+	    public void goto_OrderEvaluateui(){
+	    	try {
+				replaceSceneContent("/orderui/OrderEvaluate.fxml");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+	    
+	    
+	    
 	    
 	 
 }
