@@ -27,7 +27,7 @@
       </HBox>
       <VBox layoutY="120.0" prefHeight="400.0" prefWidth="300.0" spacing="30.0">
          <children>
-            <Button fx:id="button_webdiscountdate" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="特定期间折扣">
+            <Button fx:id="button_webdiscountdate" mnemonicParsing="false" onAction="#DataClicked" prefHeight="50.0" prefWidth="200.0" text="特定期间折扣">
                <font>
                   <Font size="20.0" />
                </font>
@@ -40,7 +40,7 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button fx:id="button_businesscirclr" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
+            <Button fx:id="button_businesscirclr" mnemonicParsing="false" onAction="#BusinessClicked" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
                <font>
                   <Font size="20.0" />
                </font>
@@ -89,12 +89,8 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="60.0">
                <children>
-                  <Button fx:id="confirm" mnemonicParsing="false" text="确认">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="back" mnemonicParsing="false" text="返回">
+                  <Label prefHeight="19.0" prefWidth="98.0" />
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#SureClicked" text="确定">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -106,5 +102,10 @@
             </HBox>
          </children>
       </VBox>
+      <Button layoutX="555.0" layoutY="515.0" mnemonicParsing="false" onAction="#ReturnClicked" prefHeight="50.0" prefWidth="112.0" text="返 回">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

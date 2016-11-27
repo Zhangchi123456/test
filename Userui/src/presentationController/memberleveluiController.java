@@ -3,6 +3,7 @@ package presentationController;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -32,26 +33,27 @@ public class memberleveluiController implements Initializable{
 	
 	@FXML
 	private Button back;
-	
+	//调到商圈折扣
 	@FXML
-	public void toBusinesscircle(ActionEvent event){
-		
+	public void BusinessClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_businesscircleui();
+	}
+	//调到日期折扣界面
+	@FXML
+	public void DataClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_webdiscoutdatenui();
 	}
 	
 	@FXML
-	public void toWebdiscountdate(ActionEvent event){
+	public void SureClicked(ActionEvent event){
 		
 	}
+	//返回网站营销人员主界面
+			@FXML
+			public void ReturnClicked(ActionEvent event){
+				UiswitchHelper.getApplication().goto_UserWebPromotionMainui();
+			}
 	
-	@FXML
-	public void update(ActionEvent event){
-		
-	}
-	
-	@FXML
-	public void toBack(ActionEvent event){
-		
-	}
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

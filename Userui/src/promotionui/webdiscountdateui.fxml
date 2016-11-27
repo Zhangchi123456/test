@@ -36,12 +36,12 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button fx:id="button_memberlevel" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="会员等级折扣">
+            <Button fx:id="button_memberlevel" mnemonicParsing="false" onAction="#MemberClicked" prefHeight="50.0" prefWidth="200.0" text="会员等级折扣">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="button_businesscircle" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
+            <Button fx:id="button_businesscircle" mnemonicParsing="false" onAction="#BusinessClicked" prefHeight="50.0" prefWidth="200.0" text="商圈专属折扣">
                <font>
                   <Font size="20.0" />
                </font>
@@ -60,7 +60,7 @@
                   <TableColumn fx:id="webdiscountdateTable_discount" prefWidth="90.0" text="折扣(%)" />
               </columns>
             </TableView>
-            <Button fx:id="delete" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="270.0" text="删除">
+            <Button fx:id="delete" contentDisplay="CENTER" mnemonicParsing="false" onAction="#DeleteClicked" prefHeight="32.0" prefWidth="270.0" text="删除">
                <font>
                   <Font size="16.0" />
                </font>
@@ -133,12 +133,8 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="80.0">
                <children>
-                  <Button fx:id="confirm" mnemonicParsing="false" text="确定">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="back" mnemonicParsing="false" text="返回">
+                  <Label prefHeight="19.0" prefWidth="42.0" />
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#SureClicked" prefHeight="32.0" prefWidth="67.0" text="确定">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -150,5 +146,10 @@
             </HBox>
          </children>
       </VBox>
+      <Button layoutX="612.0" layoutY="539.0" mnemonicParsing="false" onAction="#ReturnClicked" prefHeight="50.0" prefWidth="110.0" text="返回">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
