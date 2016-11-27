@@ -23,12 +23,7 @@ public class OrderListuiController implements Initializable {
     @FXML
     private ChoiceBox OrderStation;
     
-    @FXML
-	private void OrderTypeChoiceClicked(ActionEvent event){
-		ObservableList T=FXCollections.observableArrayList("已执行","未执行","订单异常","所有订单");
-		OrderStation.setItems(T);
-		
-	}
+    
     @FXML
 	  private void  ReturnButtonClicked(ActionEvent event){
 		  UiswitchHelper.getApplication().goto_Usermainui();
