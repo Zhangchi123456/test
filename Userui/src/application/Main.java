@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 
 
 public class Main extends Application {
@@ -86,6 +87,27 @@ public class Main extends Application {
 			GridPane page;
 			try {
 				page = (GridPane) loader.load(in);
+			}finally {
+				in.close();
+			} 
+			mainStage.centerOnScreen();
+			Scene scene = new Scene(page);
+			mainStage.setScene(scene);
+			mainStage.sizeToScene();
+
+
+			return (Initializable) loader.getController();
+		}
+	    
+	    private Initializable PreplaceSceneContent(String fxml) throws Exception {
+			FXMLLoader loader = new FXMLLoader();
+			InputStream in = Main.class.getResourceAsStream(fxml);
+			loader.setBuilderFactory(new JavaFXBuilderFactory());
+			loader.setLocation(Main.class.getResource(fxml));
+			
+			Pane page;
+			try {
+				page = (Pane) loader.load(in);
 			}finally {
 				in.close();
 			} 
@@ -203,7 +225,7 @@ public class Main extends Application {
 	    //跳转至网站管理人员主界面 num2.0
 	    public void goto_UserWebManagementui(){
 	    	try {
-				replaceSceneContent("/userui/UserWebManagement.fxml");
+				AreplaceSceneContent("/userui/UserWebManagement.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -213,7 +235,7 @@ public class Main extends Application {
 	    //从管理人员主界面跳转至酒店工作人员管理界面 num2.0.1
 	    public  void goto_UserWebManagementHotelui(){
 	    	try {
-				replaceSceneContent("/userui/UserWebManagementHotel.fxml");
+				AreplaceSceneContent("/userui/UserWebManagementHotel.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -223,7 +245,7 @@ public class Main extends Application {
 	    
 	     public void goto_UserWebManagermentWebui(){
 	    	 try {
-					replaceSceneContent("/userui/UserWebManagementWeb.fxml");
+					AreplaceSceneContent("/userui/UserWebManagementWeb.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -233,7 +255,7 @@ public class Main extends Application {
 	     //网站营销人员管理界面跳转到添加网站营销人员界面num2.0.2.1
 	     public void goto_AddWebStuffui(){
 	    	 try {
-					replaceSceneContent("/userui/AddWebStuff.fxml");
+					AreplaceSceneContent("/userui/AddWebStuff.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -243,7 +265,7 @@ public class Main extends Application {
 	    //从管理人员主界面跳转到添加酒店页面   num2.0.3
 	     public void goto_UserWebAddHotelui(){
 	    	 try {
-					replaceSceneContent("/userui/UserWebAddHotel.fxml");
+					AreplaceSceneContent("/userui/UserWebAddHotel.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -255,7 +277,7 @@ public class Main extends Application {
 	     //从添加酒店页面跳转到添加房间页面 num2.0.3.1
 	     public void goto_UserWebAddRoomui(){
 	    	 try {
-					replaceSceneContent("/userui/UserWebAddRoom.fxml");
+					AreplaceSceneContent("/userui/UserWebAddRoom.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -265,7 +287,7 @@ public class Main extends Application {
 	     //从添加酒店页面跳转到添加简介页面 num2.0.3.2
 	     public void goto_UserWebAddDescriptionui(){
 	    	 try {
-					replaceSceneContent("/userui/UserWebAddDescription.fxml");
+					AreplaceSceneContent("/userui/UserWebAddDescription.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -274,7 +296,7 @@ public class Main extends Application {
 	    //从添加酒店页面跳转到添加酒店人员页面 num2.0.3.3
 	     public void goto_AddHotelStuffui(){
 	    	 try {
-					replaceSceneContent("/userui/AddHotelStuff.fxml");
+					AreplaceSceneContent("/userui/AddHotelStuff.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -347,7 +369,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(特定日期） num3.0.5.1
 	     public void goto_hoteldiscountdateui(){
 	    	 try {
-					replaceSceneContent("/promotionui/hoteldiscountdateui.fxml");
+					PreplaceSceneContent("/promotionui/hoteldiscountdateui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -358,7 +380,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(会员生日） num3.0.5.2
 	     public void goto_birthdayui(){
 	    	 try {
-					replaceSceneContent("/promotionui/birthdayui.fxml");
+					PreplaceSceneContent("/promotionui/birthdayui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -368,7 +390,7 @@ public class Main extends Application {
 	   //从酒店工作人员主界面跳转到酒店营销策略制定界面(商业合作折扣） num3.0.5.3
 	     public void goto_businesspartnerui(){
 	    	 try {
-					replaceSceneContent("/promotionui/businesspartnerui.fxml");
+					PreplaceSceneContent("/promotionui/businesspartnerui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -378,7 +400,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(三间以上折扣） num3.0.5.4
 	     public void goto_roomnumberui(){
 	    	 try {
-					replaceSceneContent("/promotionui/businesspartnerui.fxml");
+					PreplaceSceneContent("/promotionui/businesspartnerui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -398,7 +420,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到网站促销策略(特定期间折扣）界面 num4.0.1
 	     public void goto_webdiscoutdatenui(){
 	    	 try {
-					replaceSceneContent("/promotionui/webdiscoutdateui.fxml");
+					PreplaceSceneContent("/promotionui/webdiscoutdateui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -408,7 +430,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到网站促销策略(特定商圈折扣）界面 num4.0.2
 	     public void goto_businesscircleui(){
 	    	 try {
-					replaceSceneContent("promotionui/businesscircleui.fxml");
+					PreplaceSceneContent("promotionui/businesscircleui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -418,7 +440,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到网站促销策略(会员等级折扣）界面 num4.0.3
 	     public void goto_memberlevelui(){
 	    	 try {
-					replaceSceneContent("promotionui/memberlevelui.fxml");
+					PreplaceSceneContent("promotionui/memberlevelui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
