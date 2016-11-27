@@ -29,7 +29,7 @@ public class Main extends Application {
 	    public void init(Stage stage){
 	    	this.mainStage=stage;
 	    	UiswitchHelper.setApplication(this);
-	    	goto_Usermainui();
+	    	goto_Loginui();
 	    }
 	    
 	    
@@ -58,7 +58,7 @@ public class Main extends Application {
 	    //跳转到登录界面
 	    public void goto_Loginui(){
 	    	try {
-				replaceSceneContent("/userui/Loginui.fxml");
+				replaceSceneContent("/userui/Login.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -301,4 +301,95 @@ public class Main extends Application {
 					e.printStackTrace();
 				}
 	     }
+	     
+	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(特定日期） num3.0.5.1
+	     public void goto_hoteldiscountdateui(){
+	    	 try {
+					replaceSceneContent("/promotionui/hoteldiscountdateui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     
+	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(会员生日） num3.0.5.2
+	     public void goto_birthdayui(){
+	    	 try {
+					replaceSceneContent("/promotionui/birthdayui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	   //从酒店工作人员主界面跳转到酒店营销策略制定界面(商业合作折扣） num3.0.5.3
+	     public void goto_businesspartnerui(){
+	    	 try {
+					replaceSceneContent("/promotionui/businesspartnerui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(三间以上折扣） num3.0.5.4
+	     public void goto_roomnumberui(){
+	    	 try {
+					replaceSceneContent("/promotionui/businesspartnerui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     
+	     
+	   
+	     
+	     //以下是网站营销人员进行界面跳转的跳转方法
+	     
+	      //跳转到网站营销人员主界面 num4.0
+	     
+	     
+	     
+	     //从网站营销人员主界面跳转到网站促销策略(特定期间折扣）界面 num4.0.1
+	     public void goto_webdiscoutdatenui(){
+	    	 try {
+					replaceSceneContent("/promotionui/webdiscoutdateui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从网站营销人员主界面跳转到网站促销策略(特定商圈折扣）界面 num4.0.2
+	     public void goto_businesscircleui(){
+	    	 try {
+					replaceSceneContent("promotionui/businesscircleui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     //从网站营销人员主界面跳转到网站促销策略(会员等级折扣）界面 num4.0.3
+	     public void goto_memberlevelui(){
+	    	 try {
+					replaceSceneContent("promotionui/memberlevelui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
 }
