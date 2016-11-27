@@ -414,6 +414,14 @@ public class Main extends Application {
 	     //以下是网站营销人员进行界面跳转的跳转方法
 	     
 	      //跳转到网站营销人员主界面 num4.0
+	     public void goto_UserWebPromotionMainui(){
+	    	 try {
+					PreplaceSceneContent("/userui/UserWebPromotionMain.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
 	     
 	     
 	     
@@ -447,8 +455,24 @@ public class Main extends Application {
 				}
 	     }
 	     
-	     
-	     
+	     //从网站营销人员主界面跳转到信用充值界面 num4.0.4
+	     public void goto_CreditChargeui(){
+	    	 try {
+					PreplaceSceneContent("userui/CreditChargeui.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
+	     //从网站营销人员主界面跳转到异常订单列表界面 num4.0.4
+	     public void goto_abnormalorderui(){
+	    	 try {
+					PreplaceSceneContent("orderui/abnormalorder.fxml");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	     }
 	     
 	     
 	     
