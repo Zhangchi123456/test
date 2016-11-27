@@ -43,7 +43,7 @@ public class HotelmainuiController implements Initializable{
 	}
 	@FXML
 	private void HotelPromotionClicked(ActionEvent event) {
-		UiswitchHelper.getApplication().goto_hoteldiscountdateui();
+		UiswitchHelper.getApplication().goto_birthdayui();
 	}
 	@FXML
 	private void ReturnClicked(ActionEvent event){
