@@ -319,7 +319,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到客房列表界面 num3.0.1 
 	     public void goto_roomInfoui(){
 	    	 try {
-					replaceSceneContent("/hotelui/roomInfoui.fxml");
+					GreplaceSceneContent("/hotelui/roomInfoui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -329,7 +329,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到订单列表界面 num3.0.2 
 	     public void goto_orderui(){
 	    	 try {
-					replaceSceneContent("/hotelui/orderui.fxml");
+					GreplaceSceneContent("/hotelui/orderui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -340,7 +340,7 @@ public class Main extends Application {
 	    //从订单列表界面跳转到订单详细信息界面 num3.0.2.1
 	     public void goto_ordeinfoui(){
 	    	 try {
-					replaceSceneContent("/hotelui/orderinfoui.fxml");
+					GreplaceSceneContent("/hotelui/orderinfoui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -349,7 +349,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到入住信息更新界面 num3.0.3
 	     public void goto_updateui(){
 	    	 try {
-					replaceSceneContent("/hotelui/updateui.fxml");
+					 GreplaceSceneContent("/hotelui/updateui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

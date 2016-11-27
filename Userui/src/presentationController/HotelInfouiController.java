@@ -17,32 +17,18 @@ import javafx.scene.control.TextField;
 
 public class HotelInfouiController implements Initializable{
 	@FXML
-	private Button ok,back;
+	private Button ReturnButton;
 	
 	@FXML
-	private ChoiceBox Startx;
-	
-	@FXML
-	private TextField hotelNametx,Provincetx,detailAddresstx,introductiontx,Blocktx,Citytx;
-	
-	@FXML
-	private Label hotelInfo,hotelName,Address,Province,City,Block,Star,introduction;
-     
-	@FXML
-	private void StarChoiceBoxClicked(ActionEvent event){
-		ObservableList T=FXCollections.observableArrayList("鏃�","涓�鏄熺骇","浜屾槦绾�","涓夋槦绾�","鍥涙槦绾�","浜旀槦绾�");
-		Startx.setItems(T);
-		
+	private void ReturnButtonClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_HotelMainui();
 	}
 	@FXML
 	private void ReturnClicked(ActionEvent event){
 //		Parent root = FXMLLoader.load(getClass().getResource("mainui.fxml"));
 		
 	}
-	@FXML
-	private void SureClicked(ActionEvent event){
-		
-	}
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

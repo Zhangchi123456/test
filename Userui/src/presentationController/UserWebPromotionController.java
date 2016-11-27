@@ -16,6 +16,8 @@ import javafx.scene.control.TextField;
 
 public class UserWebPromotionController implements Initializable{
 	@FXML
+	private Button CreditChargeButton;
+	@FXML
 	private void CreditChargeClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_CreditChargeui();
 	}

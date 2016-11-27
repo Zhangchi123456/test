@@ -26,7 +26,7 @@ public class HotelmainuiController implements Initializable{
      
 	@FXML
 	private void RoomInfoButtonClicked(ActionEvent event) {
-	
+	   UiswitchHelper.getApplication().goto_roomInfoui();
 		
 	}
 	@FXML
@@ -43,7 +43,7 @@ public class HotelmainuiController implements Initializable{
 	}
 	@FXML
 	private void HotelPromotionClicked(ActionEvent event) {
-		
+		UiswitchHelper.getApplication().goto_hoteldiscountdateui();
 	}
 	@FXML
 	private void ReturnClicked(ActionEvent event){
