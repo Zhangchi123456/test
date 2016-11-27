@@ -309,7 +309,7 @@ public class Main extends Application {
 	     //跳转到酒店工作人员主界面  num3.0
 	     public void goto_HotelMainui(){
 	    	 try {
-					replaceSceneContent("/hotelui/HotelMain.fxml");
+					replaceSceneContent("/hotelui/HotelmanagerMain.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

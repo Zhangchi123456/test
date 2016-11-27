@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,7 +19,7 @@ import javafx.scene.control.Button;
 
 public class HotelmainuiController implements Initializable{
 	@FXML
-	private Button RoomInfo,Update,Order,HotelInfo;
+	private Button RoomInfo,Update,Order,HotelInfo,HotelPromotion;
 	
 	@FXML
 	private Label title,welcome;
@@ -30,15 +31,15 @@ public class HotelmainuiController implements Initializable{
 	}
 	@FXML
 	private void OrderButtonClicked(ActionEvent event) {
-		
+		UiswitchHelper.getApplication().goto_orderui();
 	}
 	@FXML
 	private void UpdateButtonClicked(ActionEvent event) {
-	
+	  UiswitchHelper.getApplication().goto_updateui();
 	}
 	@FXML
 	private void HotelInfoButtonClicked(ActionEvent event) {
-		
+		UiswitchHelper.getApplication().goto_hotelInfoui();
 	}
 	@FXML
 	private void HotelPromotionClicked(ActionEvent event) {
@@ -46,7 +47,7 @@ public class HotelmainuiController implements Initializable{
 	}
 	@FXML
 	private void ReturnClicked(ActionEvent event){
-		
+		UiswitchHelper.getApplication().goto_Loginui();
 	}
 	
 	
