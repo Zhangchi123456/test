@@ -3,6 +3,7 @@ package presentationController;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -22,10 +23,19 @@ public class RegisteruiController implements Initializable {
      private CheckBox MemberCheckbox,CompanyCheckbox;
      
      @FXML
-     private Button CommitButton,ReturnButton;
+     private Button Commitutton,Returnbutton;
      
      @FXML
      private DatePicker CheckinDatepicker,CheckoutDatePicker;
+     
+     @FXML
+     private void CommitbuttonClicked(ActionEvent event){
+    	 
+     }
+     @FXML
+     private void ReturnbuttonClicked(ActionEvent event){
+    	 
+     }
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

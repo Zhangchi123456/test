@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 
 
 public class Main extends Application {
@@ -55,6 +56,47 @@ public class Main extends Application {
 			return (Initializable) loader.getController();
 		}
 	    
+	    private Initializable AreplaceSceneContent(String fxml) throws Exception {
+			FXMLLoader loader = new FXMLLoader();
+			InputStream in = Main.class.getResourceAsStream(fxml);
+			loader.setBuilderFactory(new JavaFXBuilderFactory());
+			loader.setLocation(Main.class.getResource(fxml));
+			
+			AnchorPane page;
+			try {
+				page = (AnchorPane) loader.load(in);
+			}finally {
+				in.close();
+			} 
+			mainStage.centerOnScreen();
+			Scene scene = new Scene(page);
+			mainStage.setScene(scene);
+			mainStage.sizeToScene();
+
+
+			return (Initializable) loader.getController();
+		}
+	    
+	    private Initializable GreplaceSceneContent(String fxml) throws Exception {
+			FXMLLoader loader = new FXMLLoader();
+			InputStream in = Main.class.getResourceAsStream(fxml);
+			loader.setBuilderFactory(new JavaFXBuilderFactory());
+			loader.setLocation(Main.class.getResource(fxml));
+			
+			GridPane page;
+			try {
+				page = (GridPane) loader.load(in);
+			}finally {
+				in.close();
+			} 
+			mainStage.centerOnScreen();
+			Scene scene = new Scene(page);
+			mainStage.setScene(scene);
+			mainStage.sizeToScene();
+
+
+			return (Initializable) loader.getController();
+		}
 	    //跳转到登录界面
 	    public void goto_Loginui(){
 	    	try {
