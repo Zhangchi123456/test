@@ -24,22 +24,31 @@ public class HotelmainuiController implements Initializable{
 	private Label title,welcome;
      
 	@FXML
-	private void RoomInfoButtonClicked(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("roomInfoui.fxml"));
+	private void RoomInfoButtonClicked(ActionEvent event) {
+	
+		
+	}
+	@FXML
+	private void OrderButtonClicked(ActionEvent event) {
+		
+	}
+	@FXML
+	private void UpdateButtonClicked(ActionEvent event) {
+	
+	}
+	@FXML
+	private void HotelInfoButtonClicked(ActionEvent event) {
+		
+	}
+	@FXML
+	private void HotelPromotionClicked(ActionEvent event) {
+		
+	}
+	@FXML
+	private void ReturnClicked(ActionEvent event){
 		
 	}
 	
-	private void OrderButtonClicked(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("orderui.fxml"));
-	}
-	
-	private void UpdateButtonClicked(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("updateui.fxml"));
-	}
-	
-	private void HotelInfoButtonClicked(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("hotelInfo.fxml"));
-	}
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

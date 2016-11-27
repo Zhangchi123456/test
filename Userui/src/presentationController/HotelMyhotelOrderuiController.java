@@ -37,6 +37,7 @@ public class HotelMyhotelOrderuiController implements Initializable{
 	private void refreshButtonClicked(ActionEvent event){
 		
 	}
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
