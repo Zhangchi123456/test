@@ -458,7 +458,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到信用充值界面 num4.0.4
 	     public void goto_CreditChargeui(){
 	    	 try {
-					PreplaceSceneContent("userui/CreditChargeui.fxml");
+					replaceSceneContent("userui/CreditCharge.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
