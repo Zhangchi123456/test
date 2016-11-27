@@ -33,7 +33,7 @@ public class LoginController implements Initializable{
 		if(UserId.getText().trim().substring(0, 1).equals("3"))
 			UiswitchHelper.getApplication().goto_UserWebManagementui();
 		if(UserId.getText().trim().substring(0, 1).equals("4"))
-			UiswitchHelper.getApplication().goto_UserWebManagementui();
+			UiswitchHelper.getApplication().goto_UserWebPromotionMainui();
 		
 	}
 	

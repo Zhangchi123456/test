@@ -1,5 +1,5 @@
 package presentationController;
 
-public class CreditCharge {
+public class CreditChargeController {
 
 }
