@@ -23,11 +23,7 @@ public class HotelInfouiController implements Initializable{
 	private void ReturnButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_HotelMainui();
 	}
-	@FXML
-	private void ReturnClicked(ActionEvent event){
-//		Parent root = FXMLLoader.load(getClass().getResource("mainui.fxml"));
-		
-	}
+	
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

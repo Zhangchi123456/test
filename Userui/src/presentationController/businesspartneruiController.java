@@ -3,6 +3,7 @@ package presentationController;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -31,17 +32,17 @@ public class businesspartneruiController implements Initializable{
 	
 	@FXML
 	public void toBirthday(ActionEvent event){
-		
+		UiswitchHelper.getApplication().goto_birthdayui();
 	}
 	
 	@FXML
 	public void toRoomnumber(ActionEvent event){
-		
+		UiswitchHelper.getApplication().goto_roomnumberui();
 	}
 	
 	@FXML
 	public void toHoteldiscountdate(ActionEvent event){
-		
+		UiswitchHelper.getApplication().goto_hoteldiscountdateui();
 	}
 	
 	@FXML
@@ -51,7 +52,7 @@ public class businesspartneruiController implements Initializable{
 	
 	@FXML
 	public void toBack(ActionEvent event){
-		
+		UiswitchHelper.getApplication().goto_HotelMainui();
 	}
 
 	@Override

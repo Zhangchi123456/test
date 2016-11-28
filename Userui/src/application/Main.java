@@ -400,7 +400,7 @@ public class Main extends Application {
 	     //从酒店工作人员主界面跳转到酒店营销策略制定界面(三间以上折扣） num3.0.5.4
 	     public void goto_roomnumberui(){
 	    	 try {
-					PreplaceSceneContent("/promotionui/businesspartnerui.fxml");
+					PreplaceSceneContent("/promotionui/roomnumberui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -416,7 +416,7 @@ public class Main extends Application {
 	      //跳转到网站营销人员主界面 num4.0
 	     public void goto_UserWebPromotionMainui(){
 	    	 try {
-					PreplaceSceneContent("/userui/UserWebPromotionMain.fxml");
+					PreplaceSceneContent("/userui/UserWebPromotionMainui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -438,7 +438,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到网站促销策略(特定商圈折扣）界面 num4.0.2
 	     public void goto_businesscircleui(){
 	    	 try {
-					PreplaceSceneContent("promotionui/businesscircleui.fxml");
+					PreplaceSceneContent("/promotionui/businesscircleui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -448,7 +448,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到网站促销策略(会员等级折扣）界面 num4.0.3
 	     public void goto_memberlevelui(){
 	    	 try {
-					PreplaceSceneContent("promotionui/memberlevelui.fxml");
+					PreplaceSceneContent("/promotionui/memberlevelui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -456,9 +456,9 @@ public class Main extends Application {
 	     }
 	     
 	     //从网站营销人员主界面跳转到信用充值界面 num4.0.4
-	     public void goto_CreditChargeui(){
+	     public void goto_Creditchargeui(){
 	    	 try {
-					replaceSceneContent("userui/CreditCharge.fxml");
+					replaceSceneContent("/userui/Creditchargeui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -467,7 +467,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到异常订单列表界面 num4.0.4
 	     public void goto_abnormalorderui(){
 	    	 try {
-					PreplaceSceneContent("orderui/abnormalorder.fxml");
+					PreplaceSceneContent("/orderui/abnormalorder.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

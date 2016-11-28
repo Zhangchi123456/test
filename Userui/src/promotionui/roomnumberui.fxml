@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Hotel.client.presertationController.roomnumberuiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.roomnumberuiController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0">
          <padding>
@@ -51,7 +51,7 @@
                         <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="back" mnemonicParsing="false" text="返回">
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#toBack" text="返回">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -62,12 +62,12 @@
       </VBox>
       <VBox layoutY="120.0" prefHeight="391.0" prefWidth="240.0" spacing="40.0">
          <children>
-            <Button fx:id="button_birthday" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="会员生日特惠">
+            <Button fx:id="button_birthday" mnemonicParsing="false" onAction="#toBirthday" prefHeight="50.0" prefWidth="200.0" text="会员生日特惠">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="button_businesspartner" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="合作企业客户特惠">
+            <Button fx:id="button_businesspartner" mnemonicParsing="false" onAction="#toBusinesspartner" prefHeight="50.0" prefWidth="200.0" text="合作企业客户特惠">
                <font>
                   <Font size="20.0" />
                </font>
@@ -80,7 +80,7 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button fx:id="button_hoteldiscountdate" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="特定住宿期间特惠">
+            <Button fx:id="button_hoteldiscountdate" mnemonicParsing="false" onAction="#toHoteldiscountdate" prefHeight="50.0" prefWidth="200.0" text="特定住宿期间特惠">
                <font>
                   <Font size="20.0" />
                </font>
