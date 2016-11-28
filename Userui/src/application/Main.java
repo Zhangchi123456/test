@@ -464,7 +464,7 @@ public class Main extends Application {
 					e.printStackTrace();
 				}
 	     }
-	     //从网站营销人员主界面跳转到异常订单列表界面 num4.0.4
+	     //从网站营销人员主界面跳转到异常订单列表界面 num4.0.5
 	     public void goto_abnormalorderui(){
 	    	 try {
 					PreplaceSceneContent("/orderui/abnormalorder.fxml");
