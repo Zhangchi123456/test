@@ -17,12 +17,8 @@ import javafx.scene.control.TextField;
 public class CreditChargeController implements Initializable{
     
 	@FXML
-	private TextField UserName;  //充值用户
-	@FXML
-	private TextField Money;     //充值数额
-	@FXML
-	private void SureClicked(ActionEvent event){
-		UiswitchHelper.getApplication().goto_Registerui();;
+	private void ReturnButtonClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_UserWebPromotionMainui();
 	}
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

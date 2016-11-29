@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.CreditChargeController">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -59,7 +58,7 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="返回">
+            <Button fx:id="ReturnButton" mnemonicParsing="false" onAction="#ReturnButtonClicked" text="返回">
                <font>
                   <Font size="20.0" />
                </font>

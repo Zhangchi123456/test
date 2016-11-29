@@ -428,7 +428,7 @@ public class Main extends Application {
 	     //从网站营销人员主界面跳转到网站促销策略(特定期间折扣）界面 num4.0.1
 	     public void goto_webdiscoutdatenui(){
 	    	 try {
-					PreplaceSceneContent("/promotionui/webdiscoutdateui.fxml");
+					PreplaceSceneContent("/promotionui/webdiscountdateui.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

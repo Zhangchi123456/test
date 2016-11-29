@@ -28,7 +28,7 @@ public class UserWebPromotionMainController implements Initializable{
     }
     @FXML
     private void ReturnClicked(ActionEvent event){
-    	UiswitchHelper.getApplication().goto_Loginui();;
+    	UiswitchHelper.getApplication().goto_Loginui();
     }
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
