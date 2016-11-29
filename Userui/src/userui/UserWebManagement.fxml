@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationcontroller.UserWebManagementController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebManagementController">
    <children>
       <BorderPane layoutX="-14.0" layoutY="-7.0" prefHeight="491.0" prefWidth="814.0">
          <left>
@@ -172,8 +172,8 @@
                                  <children>
                                     <HBox spacing="10.0">
                                        <children>
-                                          <Button mnemonicParsing="false" onAction="#UserNameChangeClicked" text="修改" />
-                                          <Button mnemonicParsing="false" onAction="#UsernameSaveClicked" text="保存" />
+                                          <Button mnemonicParsing="false"  text="修改" />
+                                          <Button mnemonicParsing="false"  text="保存" />
                                        </children>
                                        <HBox.margin>
                                           <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />

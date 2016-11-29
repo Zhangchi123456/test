@@ -12,7 +12,11 @@ public class UserWebAddDescriptionController implements Initializable{
     
 	@FXML
 	private void ReturnClicked(ActionEvent event){
-		UiswitchHelper.getApplication().goto_Loginui();;
+		UiswitchHelper.getApplication().goto_UserWebAddHotelui();
+	}
+	@FXML
+	private void SaveClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_UserWebAddHotelui();
 	}
 
 	@Override

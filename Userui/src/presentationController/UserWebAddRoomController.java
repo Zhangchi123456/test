@@ -14,7 +14,11 @@ public class UserWebAddRoomController implements Initializable{
 	private void ReturnClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_UserWebAddHotelui();
 	}
-
+	
+	@FXML
+	private void SaveClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_UserWebAddHotelui();
+	}
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
