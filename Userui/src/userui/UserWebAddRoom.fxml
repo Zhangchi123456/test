@@ -15,8 +15,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane prefHeight="302.0" prefWidth="502.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
+<AnchorPane prefHeight="302.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationcontroller.UserWebAddRoomController">
    <children>
       <SplitPane dividerPositions="0.374" layoutX="63.0" layoutY="75.0" prefHeight="393.0" prefWidth="563.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -73,8 +72,8 @@
                         </TextField>
                         <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <buttons>
-                              <Button mnemonicParsing="false" text="保存" />
-                              <Button mnemonicParsing="false" text="取消" />
+                              <Button mnemonicParsing="false" onAction="#SaveClicked" text="保存" />
+                              <Button mnemonicParsing="false" onAction="#ReturnClicked" text="取消" />
                            </buttons>
                            <padding>
                               <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />

@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationcontroller.UserWebAddDescriptionController">
    <children>
       <VBox prefHeight="266.0" prefWidth="437.0">
          <children>
@@ -27,8 +26,8 @@
                   <Region prefHeight="51.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
                   <ButtonBar prefHeight="40.0" prefWidth="200.0">
                     <buttons>
-                      <Button mnemonicParsing="false" text="保存" />
-                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" text="返回" />
+                      <Button mnemonicParsing="false" onAction="#SaveClicked" text="保存" />
+                        <Button layoutX="102.0" layoutY="19.0" mnemonicParsing="false" onAction="#ReturnClicked" text="返回" />
                     </buttons>
                      <HBox.margin>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
