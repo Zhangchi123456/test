@@ -28,7 +28,10 @@ public class UserWebManagementController implements Initializable{
 		UiswitchHelper.getApplication().goto_UserWebAddHotelui();
 	}
 	
-	
+	@FXML
+	private void MemberAddClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_UserWebManagermentWebui();
+	}
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
