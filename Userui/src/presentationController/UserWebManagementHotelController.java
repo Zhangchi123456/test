@@ -16,7 +16,7 @@ public class UserWebManagementHotelController implements Initializable{
 	}
 	@FXML
 	private void MemberManagementClicked(ActionEvent event){
-		UiswitchHelper.getApplication().goto_UserWebManagementHotelui();
+		UiswitchHelper.getApplication().goto_UserWebManagementui();
 	}
 	
 	@FXML

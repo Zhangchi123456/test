@@ -8,6 +8,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -15,22 +16,26 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebManagementController">
+<AnchorPane prefHeight="643.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebManagementController">
    <children>
-      <BorderPane layoutX="-14.0" layoutY="-7.0" prefHeight="491.0" prefWidth="814.0">
+      <BorderPane layoutX="-14.0" layoutY="-7.0" prefHeight="631.0" prefWidth="1008.0">
          <left>
             <VBox spacing="20.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#MemberAddClicked" text="会员管理" textAlignment="CENTER">
+                  <Button mnemonicParsing="false" onAction="#MemberAddClicked" prefHeight="61.0" prefWidth="110.0" text="会员管理" textAlignment="CENTER">
                      <VBox.margin>
                         <Insets left="20.0" top="10.0" />
                      </VBox.margin>
                      <padding>
                         <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                      </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#AddHotelMangement" text="酒工管理" textAlignment="CENTER">
+                  <Button mnemonicParsing="false" onAction="#AddHotelMangement" prefHeight="61.0" prefWidth="110.0" text="酒工管理" textAlignment="CENTER">
                      <padding>
                         <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                      </padding>
@@ -38,7 +43,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#Webmanange" prefWidth="100.0" text="网营管理" textAlignment="CENTER">
+                  <Button mnemonicParsing="false" onAction="#Webmanange" prefHeight="60.0" prefWidth="110.0" text="网营管理" textAlignment="CENTER">
                      <padding>
                         <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                      </padding>
@@ -46,7 +51,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#AddHotelClicked" text="添加酒店">
+                  <Button mnemonicParsing="false" onAction="#AddHotelClicked" prefHeight="61.0" prefWidth="109.0" text="添加酒店">
                      <VBox.margin>
                         <Insets left="20.0" />
                      </VBox.margin>
@@ -61,7 +66,7 @@
             </VBox>
          </left>
          <top>
-            <HBox BorderPane.alignment="CENTER">
+            <HBox spacing="120.0" BorderPane.alignment="CENTER">
                <children>
                   <Label text="用户名">
                      <HBox.margin>
@@ -70,11 +75,17 @@
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
                   </Label>
-                  <Button mnemonicParsing="false" onAction="#ReturnClicked" text="登出">
+                  <Button mnemonicParsing="false" onAction="#ReturnClicked" prefHeight="46.0" prefWidth="94.0" text="登出">
                      <HBox.margin>
                         <Insets left="600.0" top="40.0" />
                      </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
                   </Button>
                </children>
                <BorderPane.margin>
@@ -83,14 +94,14 @@
             </HBox>
          </top>
          <center>
-            <SplitPane dividerPositions="0.33527696793002915" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <SplitPane dividerPositions="0.42289719626168226" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <TableView prefHeight="389.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <TableView prefHeight="359.0" prefWidth="221.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columns>
-                            <TableColumn prefWidth="110.0" text="用户名" />
-                            <TableColumn prefWidth="110.0" text="账号" />
+                            <TableColumn prefWidth="167.0" text="用户名" />
+                            <TableColumn prefWidth="251.0" text="账号" />
                           </columns>
                            <padding>
                               <Insets bottom="4.0" left="2.0" right="2.0" top="2.0" />
@@ -100,7 +111,7 @@
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="389.0" prefWidth="393.0">
                      <children>
-                        <GridPane layoutX="38.0" layoutY="54.0" prefHeight="369.0" prefWidth="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <GridPane layoutY="-9.0" prefHeight="364.0" prefWidth="443.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-9.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="92.0" />
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="198.0" />
@@ -114,32 +125,20 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="姓名：">
+                              <Label prefHeight="29.0" prefWidth="98.0" text="    姓名：">
                                  <GridPane.margin>
                                     <Insets left="10.0" />
                                  </GridPane.margin>
-                              </Label>
-                              <Label text="联系方式：" GridPane.rowIndex="2">
-                                 <GridPane.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label text="账号：" GridPane.rowIndex="1">
-                                 <GridPane.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label text="生日：" GridPane.rowIndex="3">
-                                 <GridPane.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
                               </Label>
                               <Label>
                                  <GridPane.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="信用值：" GridPane.rowIndex="4">
+                              <Label GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </GridPane.margin>
@@ -167,86 +166,83 @@
                               <DatePicker prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets />
-                                 </GridPane.margin></DatePicker>
-                              <HBox spacing="10.0" GridPane.columnIndex="2">
-                                 <children>
-                                    <HBox spacing="10.0">
-                                       <children>
-                                          <Button mnemonicParsing="false"  text="修改" />
-                                          <Button mnemonicParsing="false"  text="保存" />
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="25.0" />
-                                       </padding>
-                                    </HBox>
-                                 </children>
-                                 <padding>
-                                    <Insets top="20.0" />
-                                 </padding>
-                                 <GridPane.margin>
-                                    <Insets />
                                  </GridPane.margin>
-                              </HBox>
-                              <HBox spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              </DatePicker>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                                  <children>
-                                    <HBox spacing="10.0">
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" text="修改" />
-                                          <Button mnemonicParsing="false" text="保存" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
-                                       <padding>
-                                          <Insets bottom="25.0" />
-                                       </padding>
-                                       <HBox.margin>
-                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-                                       </HBox.margin>
                                     </HBox>
                                  </children>
-                                 <padding>
-                                    <Insets top="20.0" />
-                                 </padding>
-                              </HBox>
-                              <HBox spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <children>
-                                    <HBox spacing="10.0">
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" text="修改" />
-                                          <Button mnemonicParsing="false" text="保存" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
-                                       <HBox.margin>
-                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="25.0" />
-                                       </padding>
                                     </HBox>
                                  </children>
-                                 <padding>
-                                    <Insets top="20.0" />
-                                 </padding>
-                              </HBox>
-                              <HBox spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <children>
-                                    <HBox spacing="10.0">
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" text="修改" />
-                                          <Button mnemonicParsing="false" text="保存" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
-                                       <HBox.margin>
-                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="25.0" />
-                                       </padding>
                                     </HBox>
                                  </children>
-                                 <padding>
-                                    <Insets top="20.0" />
-                                 </padding>
-                              </HBox>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
+                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Label prefHeight="29.0" prefWidth="98.0" text="    账号：" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="98.0" text="  联系方式：" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="98.0" text="    生日：" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="98.0" text="    信用值：" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </GridPane>
                      </children>

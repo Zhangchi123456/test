@@ -30,7 +30,7 @@ public class UserWebManagementController implements Initializable{
 	
 	@FXML
 	private void MemberAddClicked(ActionEvent event){
-		UiswitchHelper.getApplication().goto_UserWebManagermentWebui();
+		UiswitchHelper.getApplication().goto_UserWebManagementui();
 	}
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
