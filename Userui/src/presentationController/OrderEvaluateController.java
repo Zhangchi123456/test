@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 
 public class OrderEvaluateController  implements Initializable{
-	 @FXML
+	    @FXML
 	    private Label OrderId;
 	    @FXML
 	    private Label Hotel;

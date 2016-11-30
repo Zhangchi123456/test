@@ -18,6 +18,14 @@ import javafx.scene.control.TextField;
 public class HotelInfouiController implements Initializable{
 	@FXML
 	private Button ReturnButton;
+	@FXML
+	private TextField HotelName;
+	@FXML
+	private TextField HotelDescription;
+	@FXML
+	private TextField HotelAddress;
+	@FXML
+	private ChoiceBox HotelStar;
 	
 	@FXML
 	private void ReturnButtonClicked(ActionEvent event){

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.HotelInfouiController">
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.HotelInfouiController">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -33,7 +33,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="26.0" prefWidth="180.0" />
+                  <TextField id="HotelName" prefHeight="26.0" prefWidth="180.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="158.0">
@@ -43,7 +43,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextArea prefHeight="100.0" prefWidth="198.0" />
+                  <TextArea id="HotelAddress" prefHeight="100.0" prefWidth="198.0" />
                </children>
                <padding>
                   <Insets left="15.0" />
@@ -56,7 +56,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ChoiceBox prefHeight="26.0" prefWidth="181.0" />
+                  <ChoiceBox id="HotelStar" prefHeight="26.0" prefWidth="181.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
@@ -66,7 +66,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextArea prefHeight="100.0" prefWidth="188.0" />
+                  <TextArea id="HotelDescription" prefHeight="100.0" prefWidth="188.0" />
                </children>
             </HBox>
          </children>
@@ -80,7 +80,7 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="ReturnButton" mnemonicParsing="false" onAction="#ReturnButtonClicked" text="返回">
+            <Button id="ReturnButton" fx:id="ReturnButton" mnemonicParsing="false" onAction="#ReturnButtonClicked" text="返回">
                <font>
                   <Font size="20.0" />
                </font>
