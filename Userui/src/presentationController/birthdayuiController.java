@@ -47,12 +47,12 @@ public class birthdayuiController implements Initializable{
 	}
 	
 	@FXML
-	public void update(ActionEvent event){
+	public void SureClicked(ActionEvent event){
 		
 	}
 	
 	@FXML
-	public void toBack(ActionEvent event){
+	public void ReturnClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_HotelMainui();
 	}
 

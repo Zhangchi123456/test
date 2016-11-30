@@ -46,7 +46,7 @@ public class businesspartneruiController implements Initializable{
 	}
 	
 	@FXML
-	public void update(ActionEvent event){
+	public void SureClicked(ActionEvent event){
 		
 	}
 	

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.hoteldiscountdateuiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.hoteldiscountdateuiController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0">
          <padding>
@@ -65,7 +65,7 @@
                   <TableColumn fx:id="hoteldiscountdateTable_discount" prefWidth="90.0" text="折扣(%)" />
               </columns>
             </TableView>
-            <Button fx:id="delete" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="270.0" text="删除">
+            <Button fx:id="delete" contentDisplay="CENTER" mnemonicParsing="false" onAction="#delete" prefHeight="32.0" prefWidth="270.0" text="删除">
                <font>
                   <Font size="16.0" />
                </font>
@@ -138,12 +138,8 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="80.0">
                <children>
-                  <Button fx:id="confirm" mnemonicParsing="false" text="确定">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="back" mnemonicParsing="false" onAction="#toBack" text="返回">
+                  <Label prefHeight="19.0" prefWidth="45.0" />
+                  <Button fx:id="confirm" mnemonicParsing="false" onAction="#update" prefHeight="32.0" prefWidth="64.0" text="确定">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -155,5 +151,10 @@
             </HBox>
          </children>
       </VBox>
+      <Button fx:id="back" layoutX="672.0" layoutY="533.0" mnemonicParsing="false" onAction="#toBack" prefHeight="50.0" prefWidth="92.0" text="返回">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
