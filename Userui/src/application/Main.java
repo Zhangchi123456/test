@@ -222,7 +222,7 @@ public class Main extends Application {
 	  //用户跳到确认订单界面 1.0.1.1
 	    public void goto_confirmUi(){
 	    	try {
-					GreplaceSceneContent("/orderui/Orderuinfo.fxml");
+					replaceSceneContent("/orderui/OrderInfoUi.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
