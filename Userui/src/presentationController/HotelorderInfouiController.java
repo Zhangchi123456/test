@@ -37,16 +37,16 @@ public class HotelorderInfouiController implements Initializable{
 		
 	}
 	@FXML
-	private void backButtonClicked(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("orderui.fxml"));
+	private void ReturnClicked(ActionEvent event) throws IOException{
+	
 		
 	}
 	@FXML
-	private void refreshButtonClicked(ActionEvent event){
+	private void RefrashClicked(ActionEvent event){
 		
 	}
 	@FXML
-    private void checkButtonClicked(ActionEvent event){
+    private void CheckClicked(ActionEvent event){
 		
 	}
 	@Override

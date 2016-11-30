@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.HotelListuiController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.HotelListuiController">
    <top>
       <HBox alignment="CENTER" prefHeight="120.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -34,8 +34,8 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ChoiceBox fx:id="SortChoicebox" prefWidth="150.0" />
-                  <CheckBox fx:id="ReservationCheckbox" mnemonicParsing="false" text="曾经预定">
+                  <ChoiceBox id="SortHotel" fx:id="SortChoicebox" prefWidth="150.0" />
+                  <CheckBox id="ReservationCheckBox" fx:id="ReservationCheckbox" mnemonicParsing="false" text="曾经预定">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -45,7 +45,7 @@
                   <Insets bottom="5.0" left="20.0" right="10.0" />
                </padding>
             </HBox>
-            <TableView prefHeight="400.0" prefWidth="800.0">
+            <TableView id="HotelTable" prefHeight="400.0" prefWidth="800.0">
               <columns>
                 <TableColumn minWidth="-1.0" prefWidth="250.0" text="酒店名" />
                 <TableColumn minWidth="100.0" prefWidth="150.0" text="星级" />

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane hgap="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="25.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="25.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.HotelorderInfouiController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -50,23 +50,23 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="INtimetx" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField fx:id="OutTimetx" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Button fx:id="check" mnemonicParsing="false" onMouseClicked="#checkButtonClicked" prefHeight="50.0" prefWidth="200.0" text="点此查看" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <TextField id="INtimetx" fx:id="INtimetx" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField id="OutTimetx" fx:id="OutTimetx" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="check" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="点此查看" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="refresh" mnemonicParsing="false" onMouseClicked="#refreshButtonClicked" prefHeight="50.0" prefWidth="200.0" text="刷新" GridPane.columnIndex="2" GridPane.rowIndex="5">
+      <Button fx:id="refresh" mnemonicParsing="false" onAction="#RefrashClicked" prefHeight="50.0" prefWidth="200.0" text="刷新" GridPane.columnIndex="2" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="3" GridPane.rowIndex="5">
+      <Button fx:id="back" mnemonicParsing="false" onAction="#ReturnClicked" prefHeight="50.0" prefWidth="200.0" text="返回" GridPane.columnIndex="3" GridPane.rowIndex="5">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <ChoiceBox fx:id="Statetx" onMouseClicked="#StatetxChoiceBoxClicked" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ChoiceBox fx:id="Statetx" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
    </children>
 </GridPane>

@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TableView;
 
 public class HotelListuiController implements Initializable{
 	@FXML
@@ -17,6 +18,8 @@ public class HotelListuiController implements Initializable{
 	
 	@FXML
 	private CheckBox ReservationCheckbox;
+	@FXML
+	private TableView HotelTable;
 	
 	@FXML
 	private Button ReturnButton;

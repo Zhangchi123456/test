@@ -8,10 +8,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 
 public class roomInfoController implements Initializable{
     @FXML
     private Button ReturnButton;
+    @FXML
+    private TableColumn RoomId,RoomInfo,RoomStation,LastTime;
     
     @FXML
     private void ReturnButtonClicked(ActionEvent event){

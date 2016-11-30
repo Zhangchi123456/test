@@ -39,18 +39,18 @@
             <Insets left="50.0" />
          </padding>
       </Label>
-      <TableView fx:id="table" prefHeight="500.0" prefWidth="800.0" GridPane.columnSpan="6" GridPane.rowIndex="2" GridPane.rowSpan="6">
+      <TableView id="Table" fx:id="table" prefHeight="500.0" prefWidth="800.0" GridPane.columnSpan="6" GridPane.rowIndex="2" GridPane.rowSpan="6">
         <columns>
-          <TableColumn fx:id="hotelName" minWidth="300.0" prefWidth="75.0" text="酒店名称" />
-          <TableColumn fx:id="OrderTime" minWidth="300.0" prefWidth="75.0" text="订单预定时间" />
-            <TableColumn fx:id="State" minWidth="200.0" prefWidth="25.0" text="订单状态" />
+          <TableColumn id="HotelName" fx:id="hotelName" minWidth="300.0" prefWidth="75.0" text="酒店名称" />
+          <TableColumn id="OrderReservationTIme" fx:id="OrderTime" minWidth="300.0" prefWidth="75.0" text="订单预定时间" />
+            <TableColumn id="OrderStation" fx:id="State" minWidth="200.0" prefWidth="25.0" text="订单状态" />
         </columns>
       </TableView>
-      <Button fx:id="refresh" mnemonicParsing="false" onAction="#refreshButtonClicked" prefHeight="46.0" prefWidth="117.0" text="刷新" GridPane.columnIndex="3" GridPane.rowIndex="8">
+      <Button fx:id="refresh" mnemonicParsing="false" onAction="#RefreshClicked" prefHeight="46.0" prefWidth="117.0" text="刷新" GridPane.columnIndex="3" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="back" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="46.0" prefWidth="112.0" text="返回" GridPane.columnIndex="4" GridPane.rowIndex="8">
+      <Button fx:id="back" mnemonicParsing="false" onAction="#ReturnClicked" prefHeight="46.0" prefWidth="112.0" text="返回" GridPane.columnIndex="4" GridPane.rowIndex="8">
          <font>
             <Font size="20.0" />
          </font></Button>
