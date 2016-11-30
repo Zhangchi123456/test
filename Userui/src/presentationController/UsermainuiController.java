@@ -51,7 +51,10 @@ public class UsermainuiController implements Initializable{
 	private void MyorderButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_OrderListUi();
 	}
-	
+	@FXML
+	private void RhotelClicked(ActionEvent event) {
+	  UiswitchHelper.getApplication().goto_reservationedhotelUi();
+	}
 	
 	
 	@FXML

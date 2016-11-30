@@ -37,15 +37,11 @@ public class OrderInfoController implements Initializable {
 	
 	
 	  @FXML
-	  private void  SureClicked(ActionEvent event){
+	  private void ConfirmClicked(ActionEvent event){
 		  UiswitchHelper.getApplication().goto_Usermainui();
 		
 	  }
-	  //关闭
-	  @FXML
-		public void close(ActionEvent event){
-		
-		}
+	 
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		

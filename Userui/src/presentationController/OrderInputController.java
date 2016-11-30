@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import Helper.UiswitchHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -32,12 +33,12 @@ public class OrderInputController implements Initializable {
     @FXML
     private Button Sure;
     @FXML
-    private Button Return;
+    private Button ReturnButton;
 	
 	  @FXML
-	  private void  ret(ActionEvent event){
-		  
-		  close(null);
+	  private void  ReturnButtonClicked(ActionEvent event){
+		  UiswitchHelper.getApplication().goto_HotelListui();
+		
 	  }
 	  //鍏抽棴
 	  @FXML

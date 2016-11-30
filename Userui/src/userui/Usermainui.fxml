@@ -47,6 +47,11 @@
                <font>
                   <Font size="20.0" />
                </font>
+            </Button>
+            <Button fx:id="RhotelButton" mnemonicParsing="false" onAction="#RhotelClicked" prefHeight="50.0" prefWidth="200.0" text="曾定酒店">
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button> 
          </children>
          <padding>
@@ -78,12 +83,12 @@
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>
-                  <Label text="其他搜索条件(可选填):" />
-                  <Label text="酒店名称:" />
+                  <Label text="其他条件(选填):" />
+                  <Label text="酒店名:" />
                   <TextField maxWidth="80.0" />
                   <Label text="房间类型:" />
                   
-                  <ChoiceBox prefWidth="60.0">
+                  <ChoiceBox prefWidth="80.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="单人房" />
@@ -95,7 +100,7 @@
                   </ChoiceBox>
                   
                   <Label text="房间数量:" />
-                  <ChoiceBox prefWidth="60.0" >
+                  <ChoiceBox prefWidth="90.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="1间" />
@@ -111,7 +116,7 @@
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>
                   <Label text="酒店星级:" />
-                  <ChoiceBox prefWidth="80.0" >
+                  <ChoiceBox prefWidth="98.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="5星" />
@@ -125,7 +130,7 @@
                   
                   
                   <Label text="酒店评分:" />
-                  <ChoiceBox prefWidth="60.0" >
+                  <ChoiceBox prefWidth="98.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="5分" />
@@ -135,9 +140,9 @@
                   </FXCollections>
                   </items>
                   </ChoiceBox>
-                  <Label text=" 价格:      " />
+                  <Label text=" 价格:   " />
                   
-                  <ChoiceBox prefWidth="60.0" >
+                  <ChoiceBox prefWidth="100.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="300元以下" />
@@ -149,7 +154,7 @@
                   </ChoiceBox>
                </children>
                <padding>
-                  <Insets left="132.0" />
+                  <Insets left="50.0" />
                </padding>
             </HBox>
             <HBox prefHeight="70.0" prefWidth="200.0">
@@ -160,7 +165,7 @@
                   <DatePicker prefWidth="120.0" />
                </children>
                <padding>
-                  <Insets left="130.0" />
+                  <Insets left="50.0" />
                </padding>
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">

@@ -193,7 +193,7 @@ public class Main extends Application {
 	    //用户在酒店列表中选中酒店后跳到该酒店的信息页面  序号1.0
 	    public void goto_hotelInfoBrowseui(){
 	    	try {
-				replaceSceneContent("/hotelui/hotelInfoBrowseui.fxml");
+				GreplaceSceneContent("/hotelui/hotelInfoBrowseui.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -201,15 +201,33 @@ public class Main extends Application {
 	    }
 	    
 	    //用户在酒店具体信息页面中选中生成订单按钮跳转到生成订单界面 1.0.1
-	    public void goto_OrderInputUi(){
+	    public void goto_OrderinputUi(){
 	    	try {
-				replaceSceneContent("/orderui/OrderInputUi.fxml");
+				replaceSceneContent("/orderui/Creatorderui.fxml");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+	  //用户在酒店具体信息页面中选中曾定酒店按钮跳转到曾预定酒店界面 1.0.2
+	    public void goto_reservationedhotelUi(){
+	    	try {
+					GreplaceSceneContent("/hotelui/MyhotelOrderui.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	    }
 	    
+	  //用户跳到确认订单界面 1.0.1.1
+	    public void goto_ConfirmOrder(){
+	    	try {
+					GreplaceSceneContent("/orderui/OrderInfo.fxml");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
 	    //用户想对已执行订单进行评价时跳转到评价界面
 	    public void goto_OrderEvaluateui(){
 	    	try {

@@ -29,16 +29,16 @@ public class HotelInfoBrowseuiController implements Initializable{
 	private Label hotelInfo,hotelName,Address,Province,City,Block,Star,introduction,welcome;
      
 	@FXML
-	private void ReturnClilcked(ActionEvent event){
+	private void ReturnButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_HotelListui();
 	}
 	@FXML
-	private void MyOrderClicked(ActionEvent event){
+	private void MyorderButtoncClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_OrderListUi();
 	}
 	@FXML
-	private void InputOrderClicked(ActionEvent event){
-		UiswitchHelper.getApplication().goto_OrderInputUi();
+	private void CreatorderButtonClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_OrderinputUi();
 	}
 	 
 	@Override

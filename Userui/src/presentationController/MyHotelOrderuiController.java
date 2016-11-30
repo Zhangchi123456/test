@@ -29,7 +29,7 @@ public class MyHotelOrderuiController implements Initializable{
 	
 	@FXML
 	private void ReturnClicked(ActionEvent event){
-		UiswitchHelper.getApplication().goto_HotelMainui();
+		UiswitchHelper.getApplication().goto_Usermainui();
 	}
 	@FXML
 	private void RefrashClicked(ActionEvent event){

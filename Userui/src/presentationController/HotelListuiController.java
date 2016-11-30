@@ -30,6 +30,11 @@ public class HotelListuiController implements Initializable{
     private void ReturnButtonClicked(ActionEvent event){
         UiswitchHelper.getApplication().goto_Usermainui();
     }
+    
+    @FXML
+    private void CheckButtonClicked(ActionEvent event){
+        UiswitchHelper.getApplication().goto_hotelInfoBrowseui();
+    }
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
