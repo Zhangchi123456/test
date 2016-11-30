@@ -1,14 +1,16 @@
 package presentationController;
 
-import java.awt.Button;
-import java.awt.Label;
-import java.awt.event.ActionEvent;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import Helper.UiswitchHelper;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class OrderEvaluateController  implements Initializable{
@@ -25,26 +27,19 @@ public class OrderEvaluateController  implements Initializable{
 	    private Button Sure;
 	    @FXML
 	    private Button Return;
-	  //返回监听
+	 
 	  @FXML
 	  private void  ReturnClicked(ActionEvent event){
 		  UiswitchHelper.getApplication().goto_Usermainui();
 		 
 	  }
-	  //关闭
 	  @FXML
-		public void SureClicked(ActionEvent event){
-			
+	  private void  SureClicked(ActionEvent event){
 		  UiswitchHelper.getApplication().goto_Usermainui();
-		}
-	  //确定监听
-	  @FXML
-       private void  sur(ActionEvent event){
-		  String score = Score.getText().trim();
-		  String evaluateinfo = EvaluateInfo.getText().trim();
-		  
-		  
+		 
 	  }
+	 
+	 
 	    
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

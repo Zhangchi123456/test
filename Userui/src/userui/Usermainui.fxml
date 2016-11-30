@@ -27,6 +27,12 @@
                   <Font size="40.0" />
                </font>
             </Label>
+            <Label text="                                        " />
+            <Button mnemonicParsing="false" text="登出">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
          </children>
       </HBox>
    </top>

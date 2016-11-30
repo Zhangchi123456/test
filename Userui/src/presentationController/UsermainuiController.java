@@ -16,7 +16,7 @@ import javafx.scene.control.Label;
 
 public class UsermainuiController implements Initializable{
 	@FXML
-	private Label memebernamelabel;
+	private Label membernamelabel;
 	
 	@FXML
 	private ChoiceBox ProvinceChoicebox,CityChoicebox,RoomtypeChoicebox,RoomnumChoicebox,HotelstarChoicebox,HotelgradeChoicebox,HotelpriceChoicebox;
@@ -64,7 +64,7 @@ public class UsermainuiController implements Initializable{
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		membernamelabel.setText("zwk");
 		
 	}
 

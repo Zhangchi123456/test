@@ -34,8 +34,13 @@
       </TableView>
    </center>
    <bottom>
-      <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="800.0" spacing="520.0" BorderPane.alignment="CENTER">
          <children>
+            <Button mnemonicParsing="false" onAction="#EvaluateClicked" text="评价">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
             <Button fx:id="ReturnButton" mnemonicParsing="false" onAction="#ReturnButtonClicked" text="返回">
                <font>
                   <Font size="20.0" />

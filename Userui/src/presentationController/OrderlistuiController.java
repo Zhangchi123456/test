@@ -17,6 +17,11 @@ public class OrderlistuiController implements Initializable{
    private void ReturnButtonClicked(ActionEvent event){
 	   UiswitchHelper.getApplication().goto_Usermainui();
    }
+   
+   @FXML 
+   private void EvaluateClicked(ActionEvent event){
+	   UiswitchHelper.getApplication().goto_OrderEvaluateui();
+   }
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
