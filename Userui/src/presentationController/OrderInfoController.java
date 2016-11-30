@@ -14,33 +14,11 @@ import javafx.scene.control.TextField;
 
 public class OrderInfoController implements Initializable {
 	
-    @FXML
-    private Label Hotel;
-    @FXML
-    private Label UserNum;
-    @FXML
-    private Label Telephone;
     
-    @FXML
-    private Label Child;
-   
-    @FXML
-    private Label RoomType;
-    @FXML
-    private Label TimeBegin;
-    @FXML
-    private Label TiemEnd;
-    @FXML
-    private Button Sure;
-    @FXML
-    private Button Return;
-	
-	
-	  @FXML
-	  private void ConfirmClicked(ActionEvent event){
-		  UiswitchHelper.getApplication().goto_Usermainui();
+	@FXML
+	private void ConfirmClicked(ActionEvent event){
 		
-	  }
+	}
 	 
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

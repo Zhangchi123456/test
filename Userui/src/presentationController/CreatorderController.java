@@ -16,7 +16,7 @@ public class CreatorderController implements Initializable{
     
     @FXML
     private void ConfirmButtonClicked(ActionEvent event){
-    	UiswitchHelper.getApplication().goto_ConfirmOrder();
+         UiswitchHelper.getApplication().goto_confirmUi();
     }
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
