@@ -12,10 +12,9 @@ import javafx.scene.control.TableView;
 
 public class UsercreditrecorduiController implements Initializable{
   @FXML
-  private TableView Table;
+  private TableView CreditrecordTable;
   
-  @FXML
-  private Button ReturnButton;
+  
   
   @FXML
   private void ReturnButtonClicked(ActionEvent event){

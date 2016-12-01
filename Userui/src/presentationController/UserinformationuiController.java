@@ -15,15 +15,14 @@ import javafx.scene.control.TextField;
 public class UserinformationuiController implements Initializable{
      @FXML
      private Label MembercharacterLabel,MemberlevelLabel,MembercreditvalueLabel;
-     
+     //             会员性质              会员等级          会员信用值
      @FXML
      private TextField MembernameText,PhonenumberText;
-     
+     //                 会员名          手机号码（联系方式）
      @FXML
      private DatePicker BirthdayDatepicker;
-     
-     @FXML
-     private Button ReturnButton,SaveButton;
+     //                 会员生日
+    
      
      @FXML
      private void SaveButtonClicked(ActionEvent event){

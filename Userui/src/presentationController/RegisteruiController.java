@@ -23,8 +23,7 @@ public class RegisteruiController implements Initializable {
      @FXML
      private CheckBox MemberCheckbox,CompanyCheckbox;
      
-     @FXML
-     private Button Commitutton,Returnbutton;
+ 
      
      @FXML
      private DatePicker CheckinDatepicker,CheckoutDatePicker;

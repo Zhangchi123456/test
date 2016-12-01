@@ -22,7 +22,7 @@
       </HBox>
    </top>
    <center>
-      <TableView fx:id="Table" prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="CreditrecordTable" prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn prefWidth="160.0" text="时间" />
           <TableColumn prefWidth="160.0" text="订单号" />
