@@ -17,17 +17,10 @@ import javafx.scene.control.TextField;
 
 public class HotelInfoBrowseuiController implements Initializable{
 	@FXML
-	private Button formOrder,Back,myOrder;
-	
+	private Button formOrder,Back,myOrder;	//跳转的按钮
 	@FXML
-	private ChoiceBox Startx;
-	
-	@FXML
-	private TextField hotelNametx,Provincetx,detailAddresstx,introductiontx,Blocktx,Citytx;
-	
-	@FXML
-	private Label hotelInfo,hotelName,Address,Province,City,Block,Star,introduction,welcome;
-     
+	private Label hotelName,Province,City,Block,Star,introduction;//酒店名称，酒店所在省份，酒店所在城市，酒店所在商圈，酒店星级，酒店基础设施
+    //界面的跳转
 	@FXML
 	private void ReturnButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_HotelListui();
@@ -40,7 +33,7 @@ public class HotelInfoBrowseuiController implements Initializable{
 	private void CreatorderButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_OrderinputUi();
 	}
-	 
+	 //初始化方法
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

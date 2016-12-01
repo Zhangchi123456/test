@@ -33,7 +33,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField id="HotelName" prefHeight="26.0" prefWidth="180.0" />
+                  <TextField fx:id="HotelName" prefHeight="26.0" prefWidth="180.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="158.0">
@@ -43,7 +43,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextArea id="HotelAddress" prefHeight="100.0" prefWidth="198.0" />
+                  <TextArea fx:id="HotelAddress" prefHeight="100.0" prefWidth="198.0" />
                </children>
                <padding>
                   <Insets left="15.0" />
@@ -56,7 +56,19 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <ChoiceBox id="HotelStar" prefHeight="26.0" prefWidth="181.0" />
+                  
+                  <ChoiceBox fx:id="HotelStar" prefHeight="26.0" prefWidth="181.0" >
+                   <items>
+                  <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="一星" />
+                    <String fx:value="二星" />
+                    <String fx:value="三星" />
+                    <String fx:value="四星" />
+                    <String fx:value="五星" />
+                  </FXCollections>
+                  </items>
+                  </ChoiceBox>
+                  
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
@@ -66,7 +78,7 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextArea id="HotelDescription" prefHeight="100.0" prefWidth="188.0" />
+                  <TextArea fx:id="HotelDescription" prefHeight="100.0" prefWidth="188.0" />
                </children>
             </HBox>
          </children>

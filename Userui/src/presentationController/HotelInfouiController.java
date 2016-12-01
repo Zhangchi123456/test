@@ -17,21 +17,21 @@ import javafx.scene.control.TextField;
 
 public class HotelInfouiController implements Initializable{
 	@FXML
-	private Button ReturnButton;
+	private Button ReturnButton;//返回按钮
 	@FXML
-	private TextField HotelName;
+	private TextField HotelName;//酒店名称
 	@FXML
-	private TextField HotelDescription;
+	private TextField HotelDescription;//酒店介绍
 	@FXML
-	private TextField HotelAddress;
+	private TextField HotelAddress;//酒店地址
 	@FXML
-	private ChoiceBox HotelStar;
-	
+	private ChoiceBox HotelStar;//酒店星级
+	//界面跳转
 	@FXML
 	private void ReturnButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_HotelMainui();
 	}
-	
+	//出初始化界面
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

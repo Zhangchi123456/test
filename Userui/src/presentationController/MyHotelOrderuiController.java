@@ -12,6 +12,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -19,13 +21,9 @@ public class MyHotelOrderuiController implements Initializable{
 	@FXML
 	private Button ReturnButton;
 	@FXML
-	private TextField HotelName;
+	private TableView HotelTable;//酒店列表
 	@FXML
-	private TextField HotelDescription;
-	@FXML
-	private TextField HotelAddress;
-	@FXML
-	private ChoiceBox HotelStar;
+	private TableColumn HotelName,OrderTime,OrderStation;//表中项目
 	
 	@FXML
 	private void ReturnClicked(ActionEvent event){
