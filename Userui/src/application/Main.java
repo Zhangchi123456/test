@@ -15,13 +15,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 
 
 public class Main extends Application {
 	 private Stage mainStage;
-		public static void main(String args[]){
-			launch(args);
-		}
+		
 		@Override
 		public void start(Stage primaryStage) throws Exception {
 			init(primaryStage);
@@ -121,6 +120,27 @@ public class Main extends Application {
 
 			return (Initializable) loader.getController();
 		}
+	    private Initializable VreplaceSceneContent(String fxml) throws Exception {
+			FXMLLoader loader = new FXMLLoader();
+			InputStream in = Main.class.getResourceAsStream(fxml);
+			loader.setBuilderFactory(new JavaFXBuilderFactory());
+			loader.setLocation(Main.class.getResource(fxml));
+			
+			VBox page;
+			try {
+				page = (VBox) loader.load(in);
+			}finally {
+				in.close();
+			} 
+			mainStage.centerOnScreen();
+			Scene scene = new Scene(page);
+			mainStage.setScene(scene);
+			mainStage.sizeToScene();
+
+
+			return (Initializable) loader.getController();
+		}
+	    
 	    //跳转到登录界面
 	    public void goto_Loginui(){
 	    	try {
@@ -224,7 +244,7 @@ public class Main extends Application {
 	  //用户跳到确认订单界面 1.0.1.1
 	    public void goto_confirmUi(){
 	    	try {
-					replaceSceneContent("/orderui/OrderInfo.fxml");
+					replaceSceneContent("/orderui/OrderInfoUi.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -275,7 +295,7 @@ public class Main extends Application {
 	     //网站营销人员管理界面跳转到添加网站营销人员界面num2.0.2.1
 	     public void goto_AddWebStuffui(){
 	    	 try {
-					AreplaceSceneContent("/userui/AddWebStuff.fxml");
+					VreplaceSceneContent("/userui/AddWebStuff.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -316,7 +336,7 @@ public class Main extends Application {
 	    //从添加酒店页面跳转到添加酒店人员页面 num2.0.3.3
 	     public void goto_AddHotelStuffui(){
 	    	 try {
-					AreplaceSceneContent("/userui/AddHotelStuff.fxml");
+					VreplaceSceneContent("/userui/AddHotelStuff.fxml");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
