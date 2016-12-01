@@ -28,7 +28,7 @@
                </font>
             </Label>
             <Label text="                                        " />
-            <Button mnemonicParsing="false" text="登出">
+            <Button mnemonicParsing="false" onAction="#ReturnButtonClicked" text="登出">
                <font>
                   <Font size="20.0" />
                </font>

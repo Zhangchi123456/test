@@ -61,6 +61,11 @@ public class UsermainuiController implements Initializable{
 	private void SearchButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_HotelListui();
 	}
+
+	@FXML
+	private void ReturnButtonClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_Loginui();
+	}
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
