@@ -19,26 +19,17 @@ import vo.MemberVO;
 public class UsermainuiController implements Initializable{
 	@FXML
 	private Label membernamelabel;
-	
+	//显示会员名的label
 	@FXML
-	private ChoiceBox ProvinceChoicebox,CityChoicebox,RoomtypeChoicebox,RoomnumChoicebox,HotelstarChoicebox,HotelgradeChoicebox,HotelpriceChoicebox;
-	   
+	private ChoiceBox ProvinceChoicebox,CityChoicebox,RoomtypeChoicebox,RoomnumChoicebox,HotelstarChoicebox,HotelgradeChoicebox,HotelpriceChoicebox,BusinessChoicebox;
+	  //对应：         省份选择，           城市选择，     房间类型选择          房间数量选择          酒店星级选择           酒店评分选择       酒店价格选择          商圈选择， 
 	@FXML
-	private DatePicker CheckinDatepicker,CheckoutDatepicker;
-     
-	@FXML
-	private Button MemberinformationButton,CreditrecordButton,MyorderButton,MycommentsButton;
+	private DatePicker CheckindateDatepicker,CheckoutdateDatepicker;
+    //                 入住日期                离开日期
 	
 	
-	@FXML
-	private void ProvinceChoiceClicked(ActionEvent event){
-		
-	}
-	@FXML
-	private void RoomtypeChoiceClicked(ActionEvent event){
-		
-		
-	}
+	
+	
 	@FXML
 	private void MemberinformationButtonClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_Userinformationui();

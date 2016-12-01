@@ -39,22 +39,22 @@
    <left>
       <VBox prefHeight="400.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="MemberinformationButton" mnemonicParsing="false" onAction="#MemberinformationButtonClicked" prefHeight="50.0" prefWidth="200.0" text="个人信息">
+            <Button mnemonicParsing="false" onAction="#MemberinformationButtonClicked" prefHeight="50.0" prefWidth="200.0" text="个人信息">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="CreditrecordButton" mnemonicParsing="false" onAction="#CreditrecordButtonClicked" prefHeight="50.0" prefWidth="200.0" text="信用记录">
+            <Button mnemonicParsing="false" onAction="#CreditrecordButtonClicked" prefHeight="50.0" prefWidth="200.0" text="信用记录">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="MyorderButton" mnemonicParsing="false" onAction="#MyorderButtonClicked" prefHeight="50.0" prefWidth="200.0" text="我的订单">
+            <Button mnemonicParsing="false" onAction="#MyorderButtonClicked" prefHeight="50.0" prefWidth="200.0" text="我的订单">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="RhotelButton" mnemonicParsing="false" onAction="#RhotelClicked" prefHeight="50.0" prefWidth="200.0" text="曾定酒店">
+            <Button mnemonicParsing="false" onAction="#RhotelClicked" prefHeight="50.0" prefWidth="200.0" text="曾定酒店">
                <font>
                   <Font size="20.0" />
                </font>
@@ -80,21 +80,21 @@
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="15.0">
                <children>
                   <Label text="省:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="ProvinceChoicebox" prefWidth="80.0" />
                   <Label text="市:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="CityChoicebox" prefWidth="80.0" />
                   <Label text="县/商区:" />
-                  <ChoiceBox prefWidth="80.0" />
+                  <ChoiceBox fx:id="BusinessChoicebox" prefWidth="80.0" />
                </children>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>
                   <Label text="其他条件(选填):" />
                   <Label text="酒店名:" />
-                  <TextField maxWidth="80.0" />
+                  <TextField fx:id="HotelnameText" maxWidth="80.0" />
                   <Label text="房间类型:" />
                   
-                  <ChoiceBox prefWidth="80.0">
+                  <ChoiceBox fx:id="RoomTypeChoicebox" prefWidth="80.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="单人房" />
@@ -106,7 +106,7 @@
                   </ChoiceBox>
                   
                   <Label text="房间数量:" />
-                  <ChoiceBox prefWidth="90.0">
+                  <ChoiceBox fx:id="RoomnumChoicebox" prefWidth="90.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="1间" />
@@ -122,7 +122,7 @@
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>
                   <Label text="酒店星级:" />
-                  <ChoiceBox prefWidth="98.0">
+                  <ChoiceBox fx:id="HotelstarChoicebox" prefWidth="98.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="5星" />
@@ -136,7 +136,7 @@
                   
                   
                   <Label text="酒店评分:" />
-                  <ChoiceBox prefWidth="98.0">
+                  <ChoiceBox fx:id="HotelgradeChoicebox" prefWidth="98.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="5分" />
@@ -148,7 +148,7 @@
                   </ChoiceBox>
                   <Label text=" 价格:   " />
                   
-                  <ChoiceBox prefWidth="100.0">
+                  <ChoiceBox fx:id="HotelpriceChoicebox" prefWidth="100.0">
                   <items>
                   <FXCollections fx:factory="observableArrayList">
                     <String fx:value="300元以下" />
@@ -166,9 +166,9 @@
             <HBox prefHeight="70.0" prefWidth="200.0">
                <children>
                   <Label text="入住日期:  " />
-                  <DatePicker prefWidth="120.0" />
+                  <DatePicker fx:id="CheckindateDatepicked" prefWidth="120.0" />
                   <Label text="       离开日期:  " />
-                  <DatePicker prefWidth="120.0" />
+                  <DatePicker fx:id="CheckoutdateDatepicked" prefWidth="120.0" />
                </children>
                <padding>
                   <Insets left="50.0" />
