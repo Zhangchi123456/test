@@ -1,8 +1,9 @@
 package presentationController;
 
 import java.net.URL;
-import java.util.ResourceBundle;
 
+import java.util.ResourceBundle;
+import Helper.InituiHelper;
 import Helper.UiswitchHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import vo.MemberVO;
 
 public class UsermainuiController implements Initializable{
 	@FXML
@@ -69,7 +71,9 @@ public class UsermainuiController implements Initializable{
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		membernamelabel.setText("zwk");
+		MemberVO membervo=new MemberVO(1,100,"Trump","金会员","个人会员");
+		InituiHelper.setMemberVO(membervo);
+		membernamelabel.setText(InituiHelper.getMembername());
 		
 	}
 
