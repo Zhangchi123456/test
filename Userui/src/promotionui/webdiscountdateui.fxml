@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.webdiscountdateuiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.webdiscountdateuiController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0">
          <padding>
@@ -76,44 +77,22 @@
             </Label>
             <HBox prefHeight="27.0" prefWidth="200.0" spacing="5.0">
                <children>
-                  <Label text="开始日期">
+                  <Label prefHeight="25.0" prefWidth="161.0" text="开始日期">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="startMonth" prefHeight="30.0" prefWidth="30.0" />
-                  <Label text="月">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="startDate" prefHeight="31.0" prefWidth="30.0" />
-                  <Label text="日">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
+                  <DatePicker fx:id="TimeBegin" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
                <children>
-                  <Label text="结束日期">
+                  <Label prefHeight="25.0" prefWidth="162.0" text="结束日期">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="endMonth" prefHeight="30.0" prefWidth="30.0" />
-                  <Label text="月">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="endDate" prefHeight="30.0" prefWidth="30.0" />
-                  <Label text="日">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
+                  <DatePicker fx:id="TimeEnd" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">

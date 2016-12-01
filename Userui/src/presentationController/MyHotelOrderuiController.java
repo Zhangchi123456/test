@@ -24,7 +24,7 @@ public class MyHotelOrderuiController implements Initializable{
 	private TableView HotelTable;//酒店列表
 	@FXML
 	private TableColumn HotelName,OrderTime,OrderStation;//表中项目
-	
+	//监听方法
 	@FXML
 	private void ReturnClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_Usermainui();
@@ -33,7 +33,7 @@ public class MyHotelOrderuiController implements Initializable{
 	private void RefrashClicked(ActionEvent event){
 	
 	}
-	
+	//初始化方法
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

@@ -19,7 +19,9 @@ import javafx.scene.layout.Pane;
 
 public class Main extends Application {
 	 private Stage mainStage;
-		
+		public static void main(String args[]){
+			launch(args);
+		}
 		@Override
 		public void start(Stage primaryStage) throws Exception {
 			init(primaryStage);
@@ -222,7 +224,7 @@ public class Main extends Application {
 	  //用户跳到确认订单界面 1.0.1.1
 	    public void goto_confirmUi(){
 	    	try {
-					replaceSceneContent("/orderui/OrderInfoUi.fxml");
+					replaceSceneContent("/orderui/OrderInfo.fxml");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

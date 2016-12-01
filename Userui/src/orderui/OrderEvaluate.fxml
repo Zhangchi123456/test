@@ -3,13 +3,14 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.OrderEvaluateController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.OrderEvaluateController">
    <top>
       <Label prefHeight="130.0" prefWidth="300.0" text="          订单评价" BorderPane.alignment="CENTER">
          <font>
@@ -22,12 +23,12 @@
          <children>
             <HBox prefHeight="56.0" prefWidth="800.0">
                <children>
-                  <Label prefHeight="37.0" prefWidth="179.0" text="            订单号 ：">
+                  <Label prefHeight="37.0" prefWidth="179.0" text="          订单号 ：">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label id="OrderId" fx:id="OrderId" prefHeight="37.0" prefWidth="143.0" text="1234567">
+                  <Label fx:id="OrderId" prefHeight="37.0" prefWidth="143.0" text="1234567">
                      <font>
                         <Font size="23.0" />
                      </font>
@@ -36,12 +37,12 @@
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0">
                <children>
-                  <Label prefHeight="33.0" prefWidth="178.0" text="             酒店   ：">
+                  <Label prefHeight="33.0" prefWidth="178.0" text="       酒店名称 ：">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label id="HotelId" fx:id="Hotel" prefHeight="37.0" prefWidth="143.0" text="如家">
+                  <Label fx:id="HotelName" prefHeight="37.0" prefWidth="143.0" text="如家">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -50,7 +51,7 @@
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0">
                <children>
-                  <Label text="             评分   ：">
+                  <Label text="           评分   ：">
                      <font>
                         <Font size="22.0" />
                      </font>
@@ -60,12 +61,12 @@
             </HBox>
             <HBox prefHeight="160.0" prefWidth="800.0">
                <children>
-                  <Label text="            评价信息：">
+                  <Label text="       评价信息 ：">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <TextField id="EvaluateInfo" fx:id="EvaluateInfo" prefHeight="165.0" prefWidth="596.0" />
+                  <TextArea fx:id="EvaluateInfo" prefHeight="160.0" prefWidth="590.0" />
                </children>
             </HBox>
             <HBox prefHeight="60.0" prefWidth="800.0" spacing="10.0">

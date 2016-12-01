@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -39,16 +40,7 @@ public class webdiscountdateuiController implements Initializable{
 	private Button delete;
 	
 	@FXML
-	private TextField startMonth;
-	
-	@FXML
-	private TextField startDate;
-	
-	@FXML
-	private TextField endMonth;
-	
-	@FXML
-	private TextField endDate;
+	private DatePicker TimeBegin,TimeEnd;
 	
 	@FXML
 	private TextField newDiscount;

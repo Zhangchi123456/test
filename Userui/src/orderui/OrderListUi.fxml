@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.OrderlistuiController">
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.OrderlistuiController">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -22,26 +22,26 @@
       </HBox>
    </top>
    <center>
-      <TableView prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="OrderLIst" prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="75.0" text="酒店" />
-          <TableColumn prefWidth="75.0" text="订单号" />
-            <TableColumn prefWidth="75.0" text="时间" />
-            <TableColumn prefWidth="75.0" text="价格" />
-            <TableColumn prefWidth="75.0" text="房间" />
-            <TableColumn prefWidth="75.0" text="评价" />
+          <TableColumn fx:id="HotelName" prefWidth="146.0" text="酒店" />
+          <TableColumn fx:id="OrderId" prefWidth="116.0" text="订单号" />
+            <TableColumn fx:id="Time" minWidth="8.0" prefWidth="188.0" text="时间" />
+            <TableColumn fx:id="Price" minWidth="0.0" prefWidth="99.0" text="价格" />
+            <TableColumn fx:id="Room" minWidth="0.0" prefWidth="123.0" text="房间" />
+            <TableColumn fx:id="Evaluate" minWidth="0.0" prefWidth="127.0" text="评价" />
         </columns>
       </TableView>
    </center>
    <bottom>
       <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="800.0" spacing="520.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#EvaluateClicked" text="评价">
+            <Button mnemonicParsing="false" onAction="#EvaluateClicked" prefHeight="39.0" prefWidth="82.0" text="评价">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="ReturnButton" mnemonicParsing="false" onAction="#ReturnButtonClicked" text="返回">
+            <Button fx:id="ReturnButton" mnemonicParsing="false" onAction="#ReturnButtonClicked" prefHeight="39.0" prefWidth="81.0" text="返回">
                <font>
                   <Font size="20.0" />
                </font>

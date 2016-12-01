@@ -38,9 +38,9 @@
       </Label>
       <TableView fx:id="table" prefHeight="400.0" prefWidth="800.0" GridPane.columnSpan="6" GridPane.rowIndex="2" GridPane.rowSpan="6">
         <columns>
-          <TableColumn id="OrderId" fx:id="OrderNum" minWidth="300.0" prefWidth="75.0" text="订单编号" />
-          <TableColumn id="OrderInfo" fx:id="OrderInfo" minWidth="300.0" prefWidth="75.0" text="订单信息" />
-            <TableColumn id="OrderStation" fx:id="State" minWidth="200.0" prefWidth="25.0" text="订单状态" />
+          <TableColumn fx:id="OrderId" minWidth="300.0" prefWidth="75.0" text="订单编号" />
+          <TableColumn fx:id="OrderInfo" minWidth="300.0" prefWidth="75.0" text="订单信息" />
+            <TableColumn fx:id="OrderStation" minWidth="200.0" prefWidth="25.0" text="订单状态" />
         </columns>
       </TableView>
       <Button fx:id="check" mnemonicParsing="false" onAction="#CheckClicked" prefHeight="50.0" prefWidth="200.0" text="查看" GridPane.rowIndex="8">

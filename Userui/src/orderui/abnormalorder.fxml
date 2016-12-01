@@ -27,14 +27,14 @@
                   </Label>
                </children>
             </HBox>
-            <TableView prefHeight="406.0" prefWidth="800.0">
+            <TableView fx:id="Table" prefHeight="406.0" prefWidth="800.0">
               <columns>
-                <TableColumn prefWidth="172.0" text="订单号" />
-                <TableColumn minWidth="0.0" prefWidth="179.0" text="酒店名称" />
-                  <TableColumn prefWidth="150.0" text="用户名" />
+                <TableColumn fx:id="OrderId" prefWidth="172.0" text="订单号" />
+                <TableColumn fx:id="HotelName" minWidth="0.0" prefWidth="179.0" text="酒店名称" />
+                  <TableColumn fx:id="User" prefWidth="150.0" text="用户名" />
                   <TableColumn minWidth="0.0" prefWidth="155.0">
                      <graphic>
-                        <RadioButton mnemonicParsing="false" text="撤销" />
+                        <RadioButton fx:id="Delete" mnemonicParsing="false" text="撤销" />
                      </graphic>
                   </TableColumn>
               </columns>

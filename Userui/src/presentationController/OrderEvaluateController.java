@@ -15,19 +15,19 @@ import javafx.scene.control.TextField;
 
 public class OrderEvaluateController  implements Initializable{
 	    @FXML
-	    private Label OrderId;
+	    private Label OrderId;//订单号
 	    @FXML
-	    private Label Hotel;
+	    private Label HotelName;
 	    @FXML
 	    private TextField Score;
 	    
 	    @FXML
-	    private TextField EvaluateInfo;
+	    private TextArea EvaluateInfo;
 	    @FXML
 	    private Button Sure;
 	    @FXML
 	    private Button Return;
-	 
+	 //界面跳转
 	  @FXML
 	  private void  ReturnClicked(ActionEvent event){
 		  UiswitchHelper.getApplication().goto_Usermainui();
@@ -40,7 +40,7 @@ public class OrderEvaluateController  implements Initializable{
 	  }
 	 
 	 
-	    
+	 //初始化界面   
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

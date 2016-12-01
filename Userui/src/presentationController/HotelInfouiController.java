@@ -1,5 +1,6 @@
 package presentationController;
 
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -12,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -21,9 +23,9 @@ public class HotelInfouiController implements Initializable{
 	@FXML
 	private TextField HotelName;//酒店名称
 	@FXML
-	private TextField HotelDescription;//酒店介绍
+	private TextArea HotelDescription;//酒店介绍
 	@FXML
-	private TextField HotelAddress;//酒店地址
+	private TextArea HotelAddress;//酒店地址
 	@FXML
 	private ChoiceBox HotelStar;//酒店星级
 	//界面跳转
