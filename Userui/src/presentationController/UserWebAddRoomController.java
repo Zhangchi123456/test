@@ -7,8 +7,12 @@ import Helper.UiswitchHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
 public class UserWebAddRoomController implements Initializable{
+    @FXML
+    private TextField RoomtypeText,RoomnumText;
+    
     
 	@FXML
 	private void ReturnClicked(ActionEvent event){

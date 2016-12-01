@@ -79,11 +79,10 @@
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="15.0">
                <children>
-                  <Label text="省:" />
-                  <ChoiceBox fx:id="ProvinceChoicebox" prefWidth="80.0" />
-                  <Label text="市:" />
+                  <Label />
+                  <Label text="城市:" />
                   <ChoiceBox fx:id="CityChoicebox" prefWidth="80.0" />
-                  <Label text="县/商区:" />
+                  <Label text="商圈:" />
                   <ChoiceBox fx:id="BusinessChoicebox" prefWidth="80.0" />
                </children>
             </HBox>
@@ -118,6 +117,9 @@
                   </items>
                   </ChoiceBox>
                </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="200.0" spacing="5.0">
                <children>

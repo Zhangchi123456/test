@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="643.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebAddHotelController">
+<AnchorPane prefHeight="643.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebAddHotelController">
    <children>
       <BorderPane layoutX="-14.0" layoutY="-7.0" prefHeight="650.0" prefWidth="1007.0">
          <left>
@@ -78,7 +78,7 @@
             </VBox>
          </left>
          <top>
-            <HBox spacing="120.0" BorderPane.alignment="CENTER">
+            <HBox spacing="124.0" BorderPane.alignment="CENTER">
                <children>
                   <Label text="用户名">
                      <HBox.margin>
@@ -110,7 +110,7 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <TableView prefHeight="466.0" prefWidth="197.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-27.0" AnchorPane.topAnchor="0.0">
+                        <TableView prefHeight="462.0" prefWidth="206.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-36.0" AnchorPane.topAnchor="0.0">
                           <columns>
                             <TableColumn prefWidth="174.0" text="酒店名" />
                           </columns>
@@ -119,7 +119,7 @@
                            </padding>
                         </TableView>
                         <HBox layoutX="-2.0" layoutY="347.0" prefHeight="46.0" prefWidth="134.0" />
-                        <Button layoutX="-1.0" layoutY="473.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="173.0" text="添加酒店工作人员">
+                        <Button layoutX="-1.0" layoutY="473.0" mnemonicParsing="false" onAction="#AddHotelStuffButtonClicked" prefHeight="44.0" prefWidth="173.0" text="添加酒店工作人员">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -155,18 +155,28 @@
                                     <Insets left="10.0" top="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <TextField prefHeight="30.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER">
+                              <TextField fx:id="HotelnameText" prefHeight="30.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </TextField>
-                              <HBox spacing="10.0" GridPane.columnIndex="2">
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="2">
                                  <padding>
-                                    <Insets top="25.0" />
+                                    <Insets bottom="10.0" left="50.0" top="25.0" />
                                  </padding>
                                  <GridPane.margin>
                                     <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                                  </GridPane.margin>
+                                 <children>
+                                    <Label text="具体地址:">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
                               </HBox>
                               <Label prefHeight="28.0" prefWidth="77.0" text="   地址 ：" GridPane.rowIndex="1">
                                  <GridPane.margin>
@@ -202,12 +212,12 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="102.0" text="添加房间" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button mnemonicParsing="false" onAction="#AddRoomClicked" prefHeight="45.0" prefWidth="102.0" text="添加房间" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="102.0" text="添加简介" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Button mnemonicParsing="false" onAction="#AddIntroductionClicked" prefHeight="44.0" prefWidth="102.0" text="添加简介" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
@@ -229,6 +239,7 @@
                               </VBox>
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <TextField fx:id="AdressText" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="3" />
                            </children>
                         </GridPane>
                      </children>

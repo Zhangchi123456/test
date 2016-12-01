@@ -27,7 +27,10 @@ public class UserWebManagementWebController implements Initializable{
 	private void AddHotelClicked(ActionEvent event){
 		UiswitchHelper.getApplication().goto_UserWebAddHotelui();
 	}
-	
+	@FXML
+	private void AddButtonClicked(ActionEvent event){
+		UiswitchHelper.getApplication().goto_AddWebStuffui();
+	}
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

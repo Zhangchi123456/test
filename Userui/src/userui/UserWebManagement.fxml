@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebManagementController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationController.UserWebManagementController">
    <children>
       <BorderPane layoutX="-14.0" layoutY="-7.0" prefHeight="631.0" prefWidth="1008.0">
          <left>
@@ -110,7 +110,7 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <TableView prefHeight="359.0" prefWidth="221.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <TableView fx:id="MemberTable" prefHeight="359.0" prefWidth="221.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columns>
                             <TableColumn prefWidth="167.0" text="用户名" />
                             <TableColumn prefWidth="251.0" text="账号" />
@@ -155,39 +155,41 @@
                                     <Insets left="10.0" top="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <TextField prefHeight="30.0" prefWidth="119.0" GridPane.columnIndex="1">
+                              <TextField fx:id="NameText" prefHeight="30.0" prefWidth="179.0" GridPane.columnIndex="1">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField prefHeight="30.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <TextField fx:id="MemberlevelText" prefHeight="30.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField prefHeight="30.0" prefWidth="66.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                              <TextField fx:id="PhonenumberText" prefHeight="30.0" prefWidth="66.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <TextField fx:id="CreditValueText" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </TextField>
-                              <DatePicker prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <DatePicker fx:id="BirthdayDatepicker" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </DatePicker>
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                                  <children>
-                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                    <HBox prefHeight="100.0" prefWidth="156.0" />
                                     <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
                                           <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
                                     </HBox>
                                  </children>
                               </VBox>
@@ -196,9 +198,11 @@
                                     <HBox prefHeight="100.0" prefWidth="200.0" />
                                     <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
                                           <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
                                     </HBox>
                                  </children>
                               </VBox>
@@ -207,9 +211,11 @@
                                     <HBox prefHeight="100.0" prefWidth="200.0" />
                                     <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
                                           <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
                                     </HBox>
                                  </children>
                               </VBox>
@@ -218,9 +224,11 @@
                                     <HBox prefHeight="100.0" prefWidth="200.0" />
                                     <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
                                           <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
                                     </HBox>
                                  </children>
                               </VBox>
@@ -229,13 +237,15 @@
                                     <HBox prefHeight="100.0" prefWidth="200.0" />
                                     <HBox prefHeight="126.0" prefWidth="196.0" spacing="20.0">
                                        <children>
-                                          <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="修改" />
                                           <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="保存" />
                                        </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
                                     </HBox>
                                  </children>
                               </VBox>
-                              <Label prefHeight="29.0" prefWidth="98.0" text="    账号：" GridPane.rowIndex="1">
+                              <Label prefHeight="29.0" prefWidth="98.0" text="  会员等级:" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="17.0" />
                                  </font>
